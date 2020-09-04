@@ -18,7 +18,64 @@
 <script src="./assets/js/slick.js"></script>
 <script src="./assets/js/page_all.js"></script>
 <script>
+    $(document).ready(function () {
+        $('.slider-sale').slick({
+            centerMode: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: false,
+            centerPadding: 0,
+            autoplay: true,
+            dots: false,
+            arrows: true
+        });
+        $('.flashsale__product').slick({
+            centerMode: false,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            infinite: false,
+            centerPadding: 0,
+            autoplay: true,
+            dots: false,
+            arrows: true
+        });
+        $('.trend__list').slick({
+            centerMode: false,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            infinite: false,
+            centerPadding: 0,
+            autoplay: true,
+            dots: false,
+            arrows: true
+        });
 
+        function timer() {
+            var time_now=new Date();
+            time_now = (Date.parse(time_now) / 1000);
+            var endtime = new Date("10 September 2020 00:00:00");
+            endtime = (Date.parse(endtime) / 1000);
+            var time_left=endtime - time_now;
+            var days = Math.floor(time_left / 86400);
+            var hours = Math.floor((time_left - (days * 86400)) / 3600);
+            var minutes = Math.floor((time_left - (days * 86400) - (hours * 3600 )) / 60);
+            var seconds = Math.floor((time_left - (days * 86400) - (hours * 3600) - (minutes * 60)));
+
+            if (hours < "10") { hours = "0" + hours; }
+            if (minutes < "10") { minutes = "0" + minutes; }
+            if (seconds < "10") { seconds = "0" + seconds; }
+            if(time_left <= 0){
+                days='00';hours='00';minutes='00';seconds='00';
+            }
+            $(".days .time").html(days);
+            $(".hours .time").html(hours);
+            $(".minutes .time").html(minutes);
+            $(".seconds .time").html(seconds);
+        }
+        setInterval(function () {
+            timer();
+        },1000);
+    });
 </script>
 </body>
 </html>
