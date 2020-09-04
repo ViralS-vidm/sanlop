@@ -1,0 +1,41 @@
+// Core bootstrap variables and mixins
+$img-path: "../img";
+$font-path: "../font";
+
+@function vw($target) {
+  $vw-context: (1920 * 0.01) * 1px;   @return ($target / $vw-context) * 1vw;
+}
+@function vw1($target) {
+  $vw-context: (1366 * 0.01) * 1px;   @return ($target / $vw-context) * 1vw;
+}
+@function vwm($target) {
+  $vw-context: (768 * 0.01) * 1px;   @return ($target / $vw-context) * 1vw;
+}
+@function vwt($target) {
+  $vw-context: (768 * 0.01) * 1px;   @return ($target / $vw-context) * 1vw;
+}
+@function v($var) {
+  @return var(--#{$var});
+}
+
+img.bg{max-width: 100%;}
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-center{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.flex-lc{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.flex-between{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

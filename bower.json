@@ -1,0 +1,50 @@
+{
+  "name": "project shg",
+  "description": "vHTML Boilerplate",
+  "main": "index.js",
+  "authors": [
+    "Thuclfc"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3",
+    "bootstrap": "4.1.3",
+    "wow": "wowjs#^1.1.2",
+    "countUp.js": "^1.9.3",
+    "animate-sass": "^0.8.2",
+    "swiper": "^4.4.2",
+    "jquery-knob": "^1.2.13"
+  },
+  "overrides": {
+    "jquery": {
+      "main": [
+        "dist/jquery.js"
+      ]
+    },
+    "bootstrap": {
+      "main": [
+        "js/dist/util.js",
+        "js/dist/dropdown.js",
+        "js/dist/collapse.js",
+        "js/dist/modal.js"
+      ]
+    },
+    "popper": {
+      "main": [
+        "dist/umd/popper.js"
+      ]
+    },
+    "swiper": {
+      "main": [
+        "dist/js/swiper.js"
+      ]
+    }
+  }
+}
