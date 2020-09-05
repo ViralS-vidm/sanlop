@@ -42,13 +42,33 @@
         $('.list_img a').click(function (e) {
             e.preventDefault();
             var link_img=$(this).attr('href');
-            $('.img-product img').attr('src',link_img);
+            $('.imglarge-product img').attr('src',link_img);
             $('.list_img li').removeClass('active');
             $(this).parent().addClass('active');
         });
-        $('.select__list label').on('click',function () {
-            $('.select__list label').removeClass('active');
-           $(this).addClass('active');
+
+        // function
+        function add_amout(add_amount) {
+            var counter=$(add_amount).parent().find('input').val();
+            counter ++;
+            $(add_amount).parent().find('input').val(counter);
+            return counter;
+        }
+        function reduce_amout(reduce_amount) {
+            var counter=$(reduce_amount).parent().find('input').val();
+            counter --;
+            if(counter == 0){
+                counter = 1;
+                return counter
+            }
+            $(reduce_amount).parent().find('input').val(counter);
+            return counter;
+        }
+        $('.redu_amount').click(function () {
+            reduce_amout(this);
+        });
+        $('.add_amount').click(function () {
+            add_amout(this);
         });
     });
 </script>

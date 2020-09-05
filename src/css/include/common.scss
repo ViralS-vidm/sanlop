@@ -230,8 +230,9 @@ header{
 }
 .product_detail{
   margin-top: 48px;
-  padding: 10px;
+  padding: 10px 10px 74px;
   box-shadow: 0px 2px 3px 0 rgba(0, 0, 0, 0.1);
+  align-items: flex-start;
   .col-left{max-width: 560px;}
   .col-right{width: calc(100% - 560px); padding: 35px 20px 0 30px;}
   .list_img{
@@ -299,7 +300,7 @@ header{
   .selled{background: #f2f2f4; border-radius: 4px; padding: 2.5px 12px;}
   .price{
     background: #f6f7f8;
-    margin-top: 16px;
+    margin-top: 18px;
     padding: 11px 19px;
     p{width: 100%; margin-top: 5px;}
     &__new{
@@ -330,7 +331,7 @@ header{
     }
   }
   .type{
-    margin-top: 25px;
+    margin-top: 30px;
     h4{width: 90px;}
     &__list{
       >*+*{margin-left: 10px;}
@@ -339,23 +340,168 @@ header{
   }
   .select{
     margin-top: 30px;
-    h4{ margin-bottom: 10px;}
-    &__list{
-      >*+*{margin-left: 10px;}
-    }
-    label{
+    &__list{margin: 0 -5px;}
+    h4{ margin-bottom: 13px;}
+    label{margin: 5px; height: 35px;}
+    input{opacity: 0; position: absolute;}
+    span{
       margin-bottom: 10px;
       padding: 7px 14px;
       position: relative;
       border-radius: 4px;
       border: solid 1px #cccccc;
       background: #f6f7f8; cursor: pointer;
-      input{opacity: 0; position: absolute;}
-      &.active{background: #feecde; border-color: #f57d20; color: #f57d20;}
     }
+    input:checked + span{background: #feecde; border-color: #f57d20; color: #f57d20;}
+    .viewmore{margin-left: 5px; line-height: 27px;}
   }
   .amount{
-
+    margin-top: 15px;
+    &_inner{margin-top: 10px;}
+    p{margin-left: 10px; line-height: 40px;}
+    a{
+      width: 40px; height: 40px;
+      display: flex; align-items: center; justify-content: center;
+      border: 1px solid #d9d9d9;
+      background: #eee; color: #666;
+    }
+    input{
+      width: 60px; padding-left: 16px; margin-left: 0 -1px;
+      font-size: 16px; text-align: center;
+      border: 1px solid #d9d9d9;
+      border-left: none; border-right: none;
+    }
+  }
+  .box-btn{
+    margin-top: 28px;
+    >*+*{margin-left: 10px;}
+    a{width: 230px; height: 50px; border-radius: 3px;}
+    .btn_addcart{color: #f57d20; border: 1px solid #f57d20; background: #feecde;}
+    .btn_buy{background: #ee2c3c; color: #fff;}
+    .icon-cart{width: 24px; height: 21px; margin-right: 10px; background-position: -25px -103px;}
+  }
+}
+.shop{
+  padding: 20px;
+  margin-top: 26px;
+  box-shadow: 0px 2px 3px 0 rgba(0, 0, 0, 0.1);
+  &__avatar{
+    margin-right: 19px;
+    img{width: 102px; height: 102px; object-fit: cover; border-radius: 50%;}
+  }
+  &__cre{
+    margin-left: 30px;
+    >*+*{margin-left: 40px;}
+    li{display: flex; align-items: center;}
+    .icon{width: 50px; height: 50px; margin-right: 17px; background: url("#{$img-path}/at1.png") no-repeat 0 0;}
+    .icon1{background-position: 0 0;}
+    .icon2{background-position: -52px 0;}
+    .icon3{background-position: -105px 0;}
+  }
+  .box-btn{
+    margin-top: 10px;
+    >*+*{margin-left: 10px;}
+    a{padding: 7px 15px; min-width: 100px; border-radius: 3px;}
+  }
+  h5{font-size: 18px; font-weight: 600;}
+}
+.info_detail{
+  margin-top: 30px;
+  box-shadow: 0px 2px 3px 0 rgba(0, 0, 0, 0.1);
+  h4{display: block; padding: 15px 29px; background: #f6f7f8; font-size: 16px; font-weight: 600;}
+  article{padding: 25px 30px;}
+  .table-info {
+    margin: 30px; background: #fff; border: 1px solid #d9d9d9;
+    >*+*{border-top: 1px solid #d9d9d9;}
+    p{padding: 11px 19px; color: #111;}
+    p span{width: 130px; display: inline-block; color: #999;}
+  }
+}
+.comment{
+  margin-top: 30px;
+  padding: 15px 30px;
+  &__header{
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e4e4e4;
+  }
+  &__item{
+    padding: 20px 0;
+    border-bottom: 1px solid #e4e4e4;
+    align-items: flex-start;
+  }
+  .nav{
+    padding: 0;
+    &__page{
+      margin-right: 16px;
+      span{color: #f57d20;}
+    }
+    &__btn{
+      button{
+        width: 34px;
+        height: 34px;
+        margin: 0 1px;
+        border-radius: 0 3px 3px 0;
+        background: #f2f2f4 url("#{$img-path}/icon-arr.png") no-repeat center center;
+      }
+      .btn_next{}
+      .btn_prev{ transform: rotate(180deg);}
+    }
+  }
+  .avatar{
+    width: 70px; height: 70px; border-radius: 50%; overflow: hidden;
+    img{width: 100%; height: 100%; object-fit: cover;}
+  }
+  .info{
+    width: calc(100% - 70px);
+    padding-left: 14px;
+    .name{font-size: 15px; margin: 5px 0 7px;}
+    .rating{width: 95px; height: 18px; margin: 0 8px 0 0; background: url("#{$img-path}/star2.png") repeat;}
+    .content{margin-top: 15px;}
+    &__img{
+      margin: 11px 0 14px;
+      >*+*{margin-left: 10px;}
+      img{width: 70px; height: 70px; object-fit: cover;}
+    }
+    time{margin-top: 2px; font-size: 12px;}
+  }
+  .feedback{
+    padding: 15px;
+    background: #f2f2f4;
+    h5{margin-bottom: 7px; font-size: 12px;}
+  }
+}
+.discount{
+  margin-top: 30px;
+  box-shadow: 0px 2px 3px 0 rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
+  &__header{
+    margin-bottom: 20px;
+    text-align: center;
+    h4{margin-bottom: 8px; font-size: 18px; font-weight: 600;}
+  }
+  &__item{
+    width: 250px; height: 121px;
+    padding: 17px 19px 10px;
+    margin: 0 auto 14px;
+    background: url("#{$img-path}/bg-color.png") no-repeat;
+    position: relative;
+    h5{max-width: 130px; margin-bottom: 0; font-weight: 600; font-size: 14px; line-height: 24px;}
+    time{font-size: 12px; color: #999;}
+    .btn_saved,.btn_save{
+      width: 60px;
+      height: 30px;
+      border-radius: 3px;
+      color: #fff; font-size: 13px;
+      position: absolute;
+      right: 19px; top: 50%; transform: translateY(-50%);
+    }
+    .btn_saved{background: #ee2c3c;}
+    .btn_save{background: #f57d20;}
+    .viewmore{
+      display: block;
+      margin-top: 7px;
+      font-weight: 600;
+    }
   }
 }
 
@@ -402,6 +548,7 @@ footer{
 }
 
 //uikit
+h2.title{font-size: 16px; font-weight: 600;}
 .mt-30{margin-top: 30px;}
 .pr{position: relative;}
 .container{max-width: 1200px;}
@@ -422,6 +569,16 @@ a{color: #111;}
 button{
   background: none; border: none; cursor: pointer;
   &:focus{outline: none;}
+}
+.btn_ty1{
+  color: #f57d20;
+  border: 1px solid #f57d20;
+  background: #feecde;
+  &:hover{color: #fff; background: #f57d20;}
+}
+.btn_ty2{
+  background: #f57d20; color: #fff;
+  &:hover{color: #f57d20; border: 1px solid #f57d20; background: #feecde;}
 }
 .slick-arrow{
   width: 36px; height: 40px;
