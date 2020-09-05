@@ -18,7 +18,39 @@
 <script src="./assets/js/slick.js"></script>
 <script src="./assets/js/page_all.js"></script>
 <script>
+    $(document).ready(function () {
+        $('.product_related_list').slick({
+            centerMode: false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: false,
+            centerPadding: 0,
+            autoplay: true,
+            dots: false,
+            arrows: true
+        });
+        $('.list_img').slick({
+            centerMode: false,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            infinite: false,
+            centerPadding: 0,
+            vertical: true,
+            arrows: true
+        });
 
+        $('.list_img a').click(function (e) {
+            e.preventDefault();
+            var link_img=$(this).attr('href');
+            $('.img-product img').attr('src',link_img);
+            $('.list_img li').removeClass('active');
+            $(this).parent().addClass('active');
+        });
+        $('.select__list label').on('click',function () {
+            $('.select__list label').removeClass('active');
+           $(this).addClass('active');
+        });
+    });
 </script>
 </body>
 </html>
