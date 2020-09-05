@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Danh mục sản phẩm</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
+</head>
+<body class="">
+<header>
+    <div class="topHeader">
+        <div class="container">
+            <div class="flex">
+                <div class="box-link flex">
+                    <a href="" title="">KÊNH NGƯỜI BÁN</a>
+                    <a href="" title="">Tải ứng dụng</a>
+                    <a href="" title="">Kết nối Facebook</a>
+                </div>
+                <div class="box-link ml-auto flex">
+                    <a href="" class="flex-center"><i class="icon icon-notifi"></i>Thông báo</a>
+                    <a href="" title="">Trợ giúp</a>
+                    <div class="user flex flex-center">
+                        <a href="" title="">Đăng ký</a> <span class="space">/</span> <a href="" title="">Đăng nhập</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="btHeader container flex">
+        <a href="" class="logo"><img src="./assets/img/logo.png" alt=""></a>
+        <form action="" class="search pr">
+            <input type="text" placeholder="Tìm kiếm từ khóa" required>
+            <button type="button" class="btn_search"></button>
+            <p>Gợi ý tìm kiếm: <span>Lốp Genius</span>, <span>GrightStone</span>. <span>Turanza</span>..</p>
+        </form>
+        <div class="dropdown favourite">
+            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="true">
+                <i class="icon icon-favourite"></i>
+                <span>17</span>
+            </button>
+            <div class="dropdown-menu">
+
+            </div>
+        </div>
+        <div class="dropdown cart">
+            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="true">
+                <i class="icon icon-cart"></i>
+                <span>17</span>
+            </button>
+            <div class="dropdown-menu">
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Sản phẩm cho Ô tô</li>
+        </ul>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="filter">
+                    <h2 class="flex-lc"><i class="icon icon-filter"></i> Bộ lọc tìm kiếm</h2>
+                    <div class="filter__item filter__item--category">
+                        <h4>Danh mục sản phẩm</h4>
+                        <ul class="filter__list">
+                            <li>
+                                <h5>Sản phẩm giảm giá</h5>
+                            </li>
+                            <li>
+                                <h5>Sản phẩm bán chạy</h5>
+                            </li>
+                            <li class="active">
+                                <h5>Sản phẩm cho Ô tô</h5>
+                                <ul class="filter__sub">
+                                    <li>
+                                        <label>
+                                            <input type="checkbox">
+                                            <span>Lốp xe hơi</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox">
+                                            <span>Lốp Xe Khách, Bus</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox">
+                                            <span>Lốp xe tải</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox">
+                                            <span>Lốp xe khác</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>Sản phẩm cho Xe máy</h5>
+                            </li>
+                            <li>
+                                <h5>Sản phẩm cho Xe đạp</h5>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="filter__item filter__item--brand">
+                        <h4>Nhãn hiệu</h4>
+                        <form action="">
+                            <input type="text" placeholder="Tìm kiếm">
+                        </form>
+                        <div class="filter__list">
+                            <label>
+                                <input type="checkbox">
+                                <span>Bridgestone</span>
+                            </label>
+                            <label>
+                                <input type="checkbox">
+                                <span>Michelin</span>
+                            </label>
+                            <label>
+                                <input type="checkbox">
+                                <span>Kumho</span>
+                            </label>
+                            <label>
+                                <input type="checkbox">
+                                <span>Nutricost</span>
+                            </label>
+                            <label>
+                                <input type="checkbox">
+                                <span>Nature’s way</span>
+                            </label>
+                            <label>
+                                <input type="checkbox">
+                                <span>Mammoth</span>
+                            </label>
+                        </div>
+                        <a href="" class="viewmore">HIển thị tất cả</a>
+                    </div>
+                    <div class="filter__item filter__item--size">
+                        <h4>Kích thước sản phẩm</h4>
+                        <div class="filter__list">
+                            <label>
+                                <input type="checkbox">
+                                <span>Kích thước 1</span>
+                            </label>
+                            <label>
+                                <input type="checkbox">
+                                <span>Kích thước 2</span>
+                            </label>
+                            <label>
+                                <input type="checkbox">
+                                <span>Kích thước 3</span>
+                            </label>
+                            <label>
+                                <input type="checkbox">
+                                <span>Size 2</span>
+                            </label>
+                            <label>
+                                <input type="checkbox">
+                                <span>Size 4</span>
+                            </label>
+                            <label>
+                                <input type="checkbox">
+                                <span>Size 6</span>
+                            </label>
+                        </div>
+                        <a href="" class="viewmore">HIển thị tất cả</a>
+                    </div>
+                    <div class="filter__item">
+                        <h4>Nơi bán</h4>
+                        <div class="filter__list">
+                            <label>
+                                <input type="checkbox">
+                                <span>Hà Nội</span>
+                            </label>
+                            <label>
+                                <input type="checkbox">
+                                <span>Đà Nẵng</span>
+                            </label>
+                            <label>
+                                <input type="checkbox">
+                                <span>Cần Thơ</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter__item filter__item--price">
+                        <h4>Khoảng giá</h4>
+                        <div class="flex">
+
+                        </div>
+                    </div>
+                    <div class="filter__item">
+                        <h4>Xuất xứ</h4>
+                        <div class="filter__list">
+                            <label>
+                                <input type="checkbox">
+                                <span>Mỹ</span>
+                            </label>
+                            <label>
+                                <input type="checkbox">
+                                <span>Anh</span>
+                            </label>
+                            <label>
+                                <input type="checkbox">
+                                <span>NHập khẩu chính hãng</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter__item">
+                        <h4>Đánh giá</h4>
+                        <div class="filter__list">
+                            <label>
+                                <input type="checkbox">
+                                <span class="rating"><span class="rating__value" style="width: 100%"></span></span>
+                            </label>
+                            <label>
+                                <input type="checkbox">
+                                <span class="rating"><span class="rating__value" style="width: 80%"></span></span>
+                                <span>trở lên</span>
+                            </label>
+                            <label>
+                                <input type="checkbox">
+                                <span class="rating"><span class="rating__value" style="width: 60%"></span></span>
+                                <span>trở lên</span>
+                            </label>
+                            <label>
+                                <input type="checkbox">
+                                <span class="rating"><span class="rating__value" style="width: 40%"></span></span>
+                                <span>trở lên</span>
+                            </label>
+                            <label>
+                                <input type="checkbox">
+                                <span class="rating"><span class="rating__value" style="width: 20%"></span></span>
+                                <span>trở lên</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter__item">
+                        <h4>Dịch vụ và KHuyến mại</h4>
+                        <div class="filter__list">
+                            <label>
+                                <input type="checkbox">
+                                <span>Đang giảm giá</span>
+                            </label>
+                            <label>
+                                <input type="checkbox">
+                                <span>Hàng sẵn có</span>
+                            </label>
+                            <label>
+                                <input type="checkbox">
+                                <span>Mua bán giá buôn/bán sỉ</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <h4>Về sàn Lốp</h4>
+                <ul class="links">
+                    <li><a href="" title="">Giới thiệu về SÀN LỐP</a></li>
+                    <li><a href="" title="">Tuyển Dụng</a></li>
+                    <li><a href="" title="">Quy chế hoạt động</a></li>
+                    <li><a href="" title="">Chính sách bảo mật</a></li>
+                    <li><a href="" title="">Trung tâm trợ giúp</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <h4>Dành cho Người mua</h4>
+                <ul class="links">
+                    <li><a href="" title="">Hướng dẫn mua hàng</a></li>
+                    <li><a href="" title="">Hướng dẫn khiếu nại</a></li>
+                    <li><a href="" title="">Chăm sóc khách hàng</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <h4>Dành cho Người bán</h4>
+                <ul class="links">
+                    <li><a href="" title="">Mở shop trên SÀN LỐP</a></li>
+                    <li><a href="" title="">Hướng dẫn bán hàng</a></li>
+                    <li><a href="" title="">Chính sách bán hàng</a></li>
+                    <li><a href="" title="">Tiêu chí kiểm duyệt</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <h4>Phương thức Thanh toán</h4>
+                <div class="pay flex">
+                    <a href="" title="" class="visa">visa</a>
+                    <a href="" title="" class="mastercard">mastercard</a>
+                    <a href="" title="" class="discover">discover</a>
+                    <a href="" title="" class="paypal">paypal</a>
+                </div>
+                <h4 class="mb-0">TẢi ứng dụng miễn phí</h4>
+                <div class="download flex">
+                    <div class="qrcode mr-4"><img src="./assets/img/qrcode.jpg" alt=""></div>
+                    <div class="download_mobile">
+                        <a href=""><i class="icon icon-ios"></i>App Store</a>
+                        <a href=""><i class="icon icon-playstore"></i>Android</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright flex-between">
+            <p>© 2020 BON BON SÀN LỐP. </p>
+            <a href=""><img src="./assets/img/logoccdv.png" alt=""></a>
+        </div>
+    </div>
+</footer>
+<script src="./assets/js/jquery-3.1.1.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+<script src="./assets/js/slick.js"></script>
+<script src="./assets/js/page_all.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.product_related_list').slick({
+            centerMode: false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: false,
+            centerPadding: 0,
+            autoplay: true,
+            dots: false,
+            arrows: true
+        });
+        $('.list_img').slick({
+            centerMode: false,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            infinite: false,
+            centerPadding: 0,
+            vertical: true,
+            arrows: true
+        });
+
+        $('.product_like_list').slick({
+            centerMode: false,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            infinite: false,
+            centerPadding: 0,
+            autoplay: true,
+            dots: false,
+            arrows: true
+        });
+
+        $('.list_img a').click(function (e) {
+            e.preventDefault();
+            var link_img=$(this).attr('href');
+            $('.imglarge-product img').attr('src',link_img);
+            $('.list_img .img').removeClass('active');
+            $(this).parent().addClass('active');
+        });
+
+        // function
+        function add_amout(add_amount) {
+            var counter=$(add_amount).parent().find('input').val();
+            counter ++;
+            $(add_amount).parent().find('input').val(counter);
+            return counter;
+        }
+        function reduce_amout(reduce_amount) {
+            var counter=$(reduce_amount).parent().find('input').val();
+            counter --;
+            if(counter == 0){
+                counter = 1;
+                return counter
+            }
+            $(reduce_amount).parent().find('input').val(counter);
+            return counter;
+        }
+        $('.redu_amount').click(function () {
+            reduce_amout(this);
+        });
+        $('.add_amount').click(function () {
+            add_amout(this);
+        });
+    });
+</script>
+</body>
+</html>
