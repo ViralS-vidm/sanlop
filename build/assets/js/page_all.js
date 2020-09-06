@@ -24,16 +24,26 @@
       $('header').removeClass('scroll');
     }
   });
-  $('.btn_search').on('click', function () {
-    $('.form-search').addClass('show');
-    $('.form-search input').focus();
+  $('.dropdown-toggle').on('click', function () {
+    $(this).parent().addClass('show');
   });
   $(document).mouseup(function (e) {
-    var container = $(".form-search");
+    var container = $(".dropdown-content");
 
     if (!container.is(e.target) && container.has(e.target).length === 0) {
-      $('.form-search').removeClass('show');
+      $('.dropdown').removeClass('show');
     }
+  }); //slick js
+
+  $('.product_like_list').slick({
+    centerMode: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    infinite: false,
+    centerPadding: 0,
+    autoplay: true,
+    dots: false,
+    arrows: true
   }); // function
 
   function add_amout(add_amount) {
