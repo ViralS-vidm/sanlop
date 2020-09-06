@@ -32,30 +32,28 @@ $(document).ready(function () {
         }
     });
 
-    //slick js
-    $('.wcc_slider').slick({
-        centerMode: false,
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        infinite: false,
-        centerPadding: 0,
-        autoplay: true,
-        dots: false,
-        arrows: true,
-        responsive: [
-            {
-                breakpoint: 800,
-                settings: {
-                    slidesToShow: 4,
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 2,
-                }
-            }
-        ]
+    // function
+    function add_amout(add_amount) {
+        var counter=$(add_amount).parent().find('input').val();
+        counter ++;
+        $(add_amount).parent().find('input').val(counter);
+        return counter;
+    }
+    function reduce_amout(reduce_amount) {
+        var counter=$(reduce_amount).parent().find('input').val();
+        counter --;
+        if(counter == 0){
+            counter = 1;
+            return counter
+        }
+        $(reduce_amount).parent().find('input').val(counter);
+        return counter;
+    }
+    $('.redu_amount').click(function () {
+        reduce_amout(this);
+    });
+    $('.add_amount').click(function () {
+        add_amout(this);
     });
 
     // js effect_border

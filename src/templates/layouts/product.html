@@ -57,30 +57,6 @@
             $('.list_img .img').removeClass('active');
             $(this).parent().addClass('active');
         });
-
-        // function
-        function add_amout(add_amount) {
-            var counter=$(add_amount).parent().find('input').val();
-            counter ++;
-            $(add_amount).parent().find('input').val(counter);
-            return counter;
-        }
-        function reduce_amout(reduce_amount) {
-            var counter=$(reduce_amount).parent().find('input').val();
-            counter --;
-            if(counter == 0){
-                counter = 1;
-                return counter
-            }
-            $(reduce_amount).parent().find('input').val(counter);
-            return counter;
-        }
-        $('.redu_amount').click(function () {
-            reduce_amout(this);
-        });
-        $('.add_amount').click(function () {
-            add_amout(this);
-        });
     });
 </script>
 </body>
