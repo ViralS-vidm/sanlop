@@ -1361,6 +1361,7 @@ header .user .space {
 
 .product_info .amount input {
   width: 60px;
+  height: 40px;
   padding-left: 16px;
   margin-left: 0 -1px;
   font-size: 16px;
@@ -1392,9 +1393,17 @@ header .user .space {
   background: #feecde;
 }
 
+.product_info .box-btn .btn_addcart:hover {
+  background: #ffe2cb;
+}
+
 .product_info .box-btn .btn_buy {
   background: #ee2c3c;
   color: #fff;
+}
+
+.product_info .box-btn .btn_buy:hover {
+  background: #f51e2f;
 }
 
 .product_info .box-btn .icon-cart {
@@ -2066,59 +2075,59 @@ header .user .space {
   padding: 18px 20px;
 }
 
-.cart__header {
+.cart__header, .favourite__header {
   padding: 15px 0;
   margin-bottom: 30px;
   background: #fff;
 }
 
-.cart__header h4 {
+.cart__header h4, .favourite__header h4 {
   font-size: 22px;
   color: #666;
 }
 
-.cart__header h5 {
+.cart__header h5, .favourite__header h5 {
   margin: 0 20px 0 0;
 }
 
-.cart__header .icon-cart {
+.cart__header .icon-cart, .favourite__header .icon-cart {
   margin-right: 9px;
 }
 
-.cart__header .icon-transport {
+.cart__header .icon-transport, .favourite__header .icon-transport {
   margin-right: 12px;
 }
 
-.cart__header span {
+.cart__header span, .favourite__header span {
   display: block;
   font-weight: 600;
 }
 
-.cart__header .space {
+.cart__header .space, .favourite__header .space {
   height: 50px;
   width: 1px;
   margin: 0 25px;
   background: #d9d9d9;
 }
 
-.cart__head {
+.cart__head, .favourite__head {
   padding: 14px;
   margin-bottom: 20px;
   background: #fff;
   border: 1px solid #e4e4e4;
 }
 
-.cart__list {
+.cart__list, .favourite__list {
   margin-bottom: 19px;
   border: 1px solid #e4e4e4;
 }
 
-.cart__list h2 {
+.cart__list h2, .favourite__list h2 {
   font-weight: 600;
   font-size: 14px;
 }
 
-.cart__list .btn_chat {
+.cart__list .btn_chat, .favourite__list .btn_chat {
   width: 75px;
   height: 26px;
   margin-left: 26px;
@@ -2131,130 +2140,113 @@ header .user .space {
   font-weight: 600;
 }
 
-.cart__list .icon-chat {
+.cart__list .icon-chat, .favourite__list .icon-chat {
   margin-right: 8px;
 }
 
-.cart__list .header {
+.cart__list .header, .favourite__list .header {
   padding: 14px;
   background: #fff;
   border-bottom: 1px solid #e4e4e4;
 }
 
-.cart__list .item {
+.cart__list .item, .favourite__list .item {
   padding: 20px 14px;
   background: #fff;
   border-bottom: 1px solid #e4e4e4;
 }
 
-.cart__list .item:last-child {
+.cart__list .item:last-child, .favourite__list .item:last-child {
   border-bottom: none;
 }
 
-.cart__list .product__thumb {
+.cart__list .product__thumb, .favourite__list .product__thumb {
   width: 70px;
   height: 70px;
   padding-bottom: 0;
 }
 
-.cart__list .product__content {
+.cart__list .product__content, .favourite__list .product__content {
   width: -webkit-calc(100% - 70px);
   width: -moz-calc(100% - 70px);
   width: calc(100% - 70px);
   padding-left: 11px;
 }
 
-.cart__list .product h3 {
+.cart__list .product h3, .favourite__list .product h3 {
   font-weight: 600;
 }
 
-.cart__list .product p {
+.cart__list .product p, .favourite__list .product p {
   font-size: 13px;
 }
 
-.cart__list .type {
+.cart__list .type, .favourite__list .type {
   padding: 0 15px 0 40px;
 }
 
-.cart__list .type span {
+.cart__list .type span, .favourite__list .type span {
   color: #f57d20;
 }
 
-.cart__list .btn_remove {
+.cart__list .btn_remove, .favourite__list .btn_remove {
   color: #f57d20;
 }
 
-.cart__list .price {
+.cart__list .btn_remove:hover, .favourite__list .btn_remove:hover {
+  color: #111;
+}
+
+.cart__list .price, .favourite__list .price {
   font-weight: 600;
 }
 
-.cart__pay {
+.cart__pay, .favourite__pay {
   background: #fff;
   margin-top: 80px;
 }
 
-.cart__pay .header {
+.cart__pay .header, .favourite__pay .header {
   background: #fff;
   padding: 15px 0;
   border-bottom: 1px solid #e4e4e4;
 }
 
-.cart__pay .voucher p {
+.cart__pay .voucher p, .favourite__pay .voucher p {
   min-width: 320px;
 }
 
-.cart__pay label {
+.cart__pay label, .favourite__pay label {
   margin-bottom: 0;
 }
 
-.cart__pay .btn_voucher {
+.cart__pay .btn_voucher, .favourite__pay .btn_voucher {
   color: #f57d20;
 }
 
-.cart__pay .icon-voucher {
+.cart__pay .icon-voucher, .favourite__pay .icon-voucher {
   margin-right: 10px;
 }
 
-.cart__pay .icon-buy {
+.cart__pay .icon-buy, .favourite__pay .icon-buy {
   margin-right: 12px;
 }
 
-.cart__pay label {
+.cart__pay label, .favourite__pay label {
   text-transform: uppercase;
 }
 
-.cart__pay .btn_buy {
-  width: 200px;
-  height: 50px;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
-  background: #d9d9d9;
-}
-
-.cart__pay .btn_pay {
-  width: 400px;
-  height: 50px;
-  margin-top: 14px;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
-  background: #f57d20;
-  font-size: 16px;
-  color: #fff;
-}
-
-.cart__pay .price {
+.cart__pay .price, .favourite__pay .price {
   font-size: 12px;
   font-weight: 700;
   color: #e33b45;
 }
 
-.cart__pay .price span {
+.cart__pay .price span, .favourite__pay .price span {
   font-size: 18px;
 }
 
-.cart__pay .txt {
+.cart__pay .txt, .favourite__pay .txt {
   -webkit-box-align: center;
   -webkit-align-items: center;
      -moz-box-align: center;
@@ -2266,31 +2258,88 @@ header .user .space {
   text-align: right;
 }
 
-.cart__pay .txt span {
+.cart__pay .txt span, .favourite__pay .txt span {
   display: block;
   font-size: 13px;
   color: #f57d20;
   font-weight: normal;
 }
 
-.cart .cl-1 {
+.cart .btn_buy_continue, .favourite .btn_buy_continue {
+  width: 200px;
+  height: 50px;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  background: #d9d9d9;
+}
+
+.cart .btn_buy_continue:hover, .favourite .btn_buy_continue:hover {
+  background: #cac9c9;
+  color: #111;
+}
+
+.cart .btn_pay, .favourite .btn_pay {
+  width: 400px;
+  height: 50px;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  background: #f57d20;
+  font-size: 16px;
+  color: #fff;
+}
+
+.cart .btn_pay:hover, .favourite .btn_pay:hover {
+  background: #df7320;
+  color: #fff;
+}
+
+.cart .cl-1, .favourite .cl-1 {
   width: 735px;
 }
 
-.cart .cl-2 {
+.cart .cl-2, .favourite .cl-2 {
   width: 120px;
 }
 
-.cart .cl-3 {
+.cart .cl-3, .favourite .cl-3 {
   width: 150px;
 }
 
-.cart .cl-4 {
+.cart .cl-4, .favourite .cl-4 {
   width: 110px;
 }
 
-.cart .cl-5 {
+.cart .cl-5, .favourite .cl-5 {
   width: 25px;
+}
+
+.favourite__header h4 {
+  font-size: 20px;
+}
+
+.favourite__btn {
+  background: #fff;
+  margin-top: 80px;
+}
+
+.favourite .btn_buy {
+  margin-right: 30px;
+  width: 120px;
+  height: 40px;
+}
+
+.favourite .cl-1 {
+  width: 770px;
+}
+
+.favourite .cl-2 {
+  width: 175px;
+}
+
+.favourite .cl-3 {
+  width: 190px;
 }
 
 .breadcrumb {
@@ -2463,6 +2512,10 @@ footer .links a {
   color: #111;
 }
 
+footer .links a:hover {
+  color: #f57d20;
+}
+
 footer .pay {
   margin-bottom: 26px;
 }
@@ -2557,6 +2610,29 @@ footer .copyright p {
   padding-bottom: 20px;
 }
 
+.pt-30 {
+  padding-top: 30px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+a {
+  -webkit-transition: .25s;
+  -o-transition: .25s;
+  -moz-transition: .25s;
+  transition: .25s;
+}
+
+a:hover {
+  color: #f57d20;
+}
+
 h2.title {
   font-size: 16px;
   font-weight: 600;
@@ -2568,6 +2644,34 @@ h5, h4 {
 
 .mt-30 {
   margin-top: 30px;
+}
+
+.btn_ty3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #f57d20;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  color: #fff;
+}
+
+.btn_ty3:hover {
+  background: #df7320;
+  color: #fff;
 }
 
 .pr {
@@ -2606,6 +2710,11 @@ a {
      -moz-box-shadow: 0px 2px 3px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0px 2px 3px 0 rgba(0, 0, 0, 0.1);
   background: #fff;
+}
+
+.btn_viewmore:hover {
+  background: #f57d20;
+  color: #fff;
 }
 
 button {
