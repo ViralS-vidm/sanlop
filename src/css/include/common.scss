@@ -246,6 +246,7 @@ header{
   }
 }
 .product{
+  transition: all .25s ease;
   &__thumb{
     display: block; position: relative; padding-bottom: 100%;
     img{width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;}
@@ -763,7 +764,7 @@ header{
   }
   .product{
     &__thumb{width: 70px; height: 70px; padding-bottom: 0;}
-    &__content{width: calc(100% - 70px); padding-left: 11px;}
+    &__content{width: calc(100% - 70px); max-width: 300px; padding-left: 11px;}
     h3{font-weight: 600;}
     p{font-size: 13px;}
   }
@@ -888,6 +889,107 @@ header{
   .cl-2{width: 175px;}
   .cl-3{width: 190px;}
   .icon-like{width: 21px; height: 19px; margin-right: 5px; background-position: -1px -227px; vertical-align: middle;}
+}
+.bank_acount{
+  margin-top: 20px;
+  padding: 20px 30px;
+  background: #fff;
+  h4{font-size: 18px;}
+  .btn_add_account{width: 130px; height: 40px;}
+  .account{
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 0.5px;
+    box-shadow: 0px 1px 30px 0 rgba(51, 51, 51, 0.2);
+    .df{background: #07a917;}
+    .not_accuracy,.df{ margin-left: 5px; padding: 2px 10px; border-radius: 9px; color: #fff; font-size: 12px; text-transform: none;}
+    .accuracy{width: 18px; height: 18px; margin-left: 6px; background: url("#{$img-path}/icon-tick2.png") no-repeat;}
+    .not_accuracy{background: #999999;}
+    .btn_set_defalt{
+      width: 150px; height: 40px; margin-left: 11px;
+      &.set{color: #999;}
+    }
+    &__img{width: 70px; height: 70px; padding: 15px; border: 1px solid #7ecfd4;}
+    &__content{
+      max-width: 430px;
+      padding-left: 12px;
+      h5{margin-bottom: 10px; font-weight: 600; font-size: 15px; text-transform: uppercase;}
+    }
+  }
+}
+.box-order{
+  background: #fff;
+  padding-bottom: 10px;
+  .tab{
+    padding: 5px 15px 0 !important;
+    border-bottom: 1px solid #e4e4e4;
+    a{display: block; padding: 15px 30px; position: relative;}
+    .active{
+      color: #f57d20;
+      &::after{
+        content: "";
+        width: 100%; height: 3px; background: #f57d20;
+        position: absolute; left: 0; bottom: -1px;
+      }
+    }
+  }
+  .order{
+    margin: 20px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    .avt{width: 30px; height: 30px; object-fit: cover; border-radius: 50%; margin-right: 11px;}
+    .id span{font-weight: 700; color: #e00000;}
+    &__header{padding: 10px; background: #f9f9f9; border-bottom:  1px solid #d9d9d9;}
+    &__bottom{
+      padding: 12px;
+      background: #f9f9f9;
+      border-top: 1px solid #d9d9d9;
+    }
+  }
+  .item{padding: 20px 12px; border-bottom: 1px solid #d9d9d9;}
+  .item:last-child{border-bottom: none;}
+  .product{
+    &__thumb{width: 60px; height: 60px; padding-bottom: 0;}
+    &__content{width: calc(100% - 60px); max-width: 300px; padding-left: 10px;}
+    h3{font-weight: 600; min-height: auto;}
+    p{font-size: 13px;}
+  }
+  .type{padding: 0 20px;}
+  .price{
+    font-weight: 700;
+    text-align: right;
+    span{font-weight: 400; display: block; margin-top: 2px;}
+  }
+  .box-btn{
+    a{padding: 8px 25px; margin-right: 10px; background: #fff; border: 1px solid #d9d9d9; border-radius: 4px;}
+    a:hover{background: #d9d9d9;}
+  }
+  .total span{font-size: 18px; color: #e00000; font-weight: 700;}
+}
+.notification{
+  .tab{
+    background: #fff;
+    padding: 12px; margin-bottom: 10px;
+    a{display: block; padding: 8px 18px; margin-right: 10px; border-radius: 4px; border: solid 1px #e4e4e4; background-color: #f2f2f4;}
+    .active{background: #feecde; border: 1px solid #f57d20; color: #f57d20;}
+  }
+  .tab-pane{background: #fff; padding: 5px;}
+  .post{
+    margin-bottom: 5px;
+    padding: 20px 10px;
+    background: #f2f2f4;
+    align-items: center;
+    &:nth-child(1),&:nth-child(2){background: #dbf2dd;}
+    h3{margin-bottom: 5px; font-weight: 600; font-size: 15px;}
+    p{color: #444; line-height: 21px;}
+    .btn_view{
+      padding: 8px 16px;
+      background: #fff;
+      border: 1px solid #e4e4e4;
+    }
+    &__thumb{width: 80px; height: 80px;}
+    &__content{width: calc(100% - 220px); margin-top: 0; padding-left: 15px;}
+  }
 }
 
 //login
@@ -1251,6 +1353,7 @@ footer{
 }
 
 //uikit
+.mb-20{margin-bottom: 20px;}
 .pt-20{padding-top: 20px;}
 .pb-20{padding-bottom: 20px;}
 .pt-30{padding-top: 30px;}

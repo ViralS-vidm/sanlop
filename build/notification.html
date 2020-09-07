@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Tài khoản</title>
+    <title>Thông báo</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="./assets/css/style.css" rel="stylesheet">
@@ -128,7 +128,7 @@
                     </div>
                 </div>
                 <ul class="profile__nav">
-                    <li class="active">
+                    <li>
                         <h5><i class="icon icon-pr1"></i>Thông tin tài khoản</h5>
                         <ul>
                             <li><a href="">Thông tin tài khoản</a></li>
@@ -142,7 +142,7 @@
                     <li>
                         <h5><i class="icon icon-pr3"></i>Đơn mua hàng</h5>
                     </li>
-                    <li>
+                    <li class="active">
                         <h5><i class="icon icon-pr4"></i>Thông báo</h5>
                         <ul>
                             <li><a href="">Cập nhật đơn hàng</a></li>
@@ -155,59 +155,53 @@
                 </ul>
             </div>
             <div class="col-lg-9">
-                <h2>Thông tin tài khoản</h2>
-                <div class="profile__detail">
-                    <form action="">
-                        <div class="form-group">
-                            <label>Tên đăng nhập</label>
-                            <input type="text" class="username" name="" value="Jusstires_01" readonly>
+                <div class="notification">
+                    <ul class="tab nav">
+                        <li><a href="#markread" data-toggle="tab" class="active">Đánh dấu đã đọc tất cả</a></li>
+                        <li><a href="#unread" data-toggle="tab">Chưa đọc</a></li>
+                        <li><a href="#read" data-toggle="tab">Đã đọc</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="markread" class="tab-pane fade show active">
+                            <article class="flex post">
+                                <a href="" class="post__thumb"><img src="./assets/img/thumb4.jpg" alt=""></a>
+                                <div class="post__content">
+                                    <h3><a href="">Nhắc nhở: Bạn đã nhận được hàng chưa</a></h3>
+                                    <p>Sản phẩm của bạn sẽ được giao trước 24/12/2019. Yêu cầu hoàn tiền trước khi hết hạn đảm bảo nếu bạn không chấp nhận sản phẩm nhận được. Sau ngày 24/12/2019 mọi khiếu nại về sản phẩm sẽ không được giải quyết.</p>
+                                </div>
+                                <a href="" title="" class="btn_view ml-auto">Xem chi tiết</a>
+                            </article>
+                            <article class="flex post">
+                                <a href="" class="post__thumb"><img src="./assets/img/thumb4.jpg" alt=""></a>
+                                <div class="post__content">
+                                    <h3><a href="">Nhắc nhở: Bạn đã nhận được hàng chưa</a></h3>
+                                    <p>Sản phẩm của bạn sẽ được giao trước 24/12/2019. Yêu cầu hoàn tiền trước khi hết hạn đảm bảo nếu bạn không chấp nhận sản phẩm nhận được. Sau ngày 24/12/2019 mọi khiếu nại về sản phẩm sẽ không được giải quyết.</p>
+                                </div>
+                                <a href="" title="" class="btn_view ml-auto">Xem chi tiết</a>
+                            </article>
+                            <article class="flex post">
+                                <a href="" class="post__thumb"><img src="./assets/img/thumb4.jpg" alt=""></a>
+                                <div class="post__content">
+                                    <h3><a href="">Nhắc nhở: Bạn đã nhận được hàng chưa</a></h3>
+                                    <p>Sản phẩm của bạn sẽ được giao trước 24/12/2019. Yêu cầu hoàn tiền trước khi hết hạn đảm bảo nếu bạn không chấp nhận sản phẩm nhận được. Sau ngày 24/12/2019 mọi khiếu nại về sản phẩm sẽ không được giải quyết.</p>
+                                </div>
+                                <a href="" title="" class="btn_view ml-auto">Xem chi tiết</a>
+                            </article>
                         </div>
-                        <div class="form-group">
-                            <label>Email</label>
-                            <input type="email" name="" value="Demo-email@Mail.com">
+                        <div id="unread" class="tab-pane fade">
+                            <article class="flex post">
+                                <a href="" class="post__thumb"><img src="./assets/img/thumb4.jpg" alt=""></a>
+                                <div class="post__content">
+                                    <h3><a href="">Nhắc nhở: Bạn đã nhận được hàng chưa</a></h3>
+                                    <p>Sản phẩm của bạn sẽ được giao trước 24/12/2019. Yêu cầu hoàn tiền trước khi hết hạn đảm bảo nếu bạn không chấp nhận sản phẩm nhận được. Sau ngày 24/12/2019 mọi khiếu nại về sản phẩm sẽ không được giải quyết.</p>
+                                </div>
+                                <a href="" title="" class="btn_view ml-auto">Xem chi tiết</a>
+                            </article>
                         </div>
-                        <div class="form-group">
-                            <label>Số điện thoại</label>
-                            <input type="number" name="" value="0965999956">
+                        <div id="read" class="tab-pane fade">
+
                         </div>
-                        <div class="form-group">
-                            <label>Tên Shop</label>
-                            <input type="text" name="" value="Demo-email@Mail.com">
-                        </div>
-                        <div class="form-group">
-                            <label>Giới tính</label>
-                            <div class="flex-lc">
-                                <label class="checkbox">
-                                    <input type="radio" name="sex">
-                                    <span class="checked"></span>
-                                    Nam
-                                </label>
-                                <label class="checkbox">
-                                    <input type="radio" name="sex">
-                                    <span class="checked"></span>
-                                    Nữ
-                                </label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label>Ngày sinh</label>
-                            <input type="text" name="" value="28/3/1985">
-                        </div>
-                        <div class="form-group">
-                            <label>Ảnh đại diện</label>
-                            <input type="file" name="" value="Tải lên">
-                            <div class="img-wrapper img-avatar"><img src="./assets/img/logo-shop.png" alt=""></div>
-                        </div>
-                        <div class="form-group">
-                            <label>Ảnh bìa</label>
-                            <input type="file" name="" value="Tải lên">
-                            <div class="img-wrapper img-cover"><img src="./assets/img/banner-profile.jpg" alt=""></div>
-                        </div>
-                        <div class="form-action flex">
-                            <button type="button" class="btn_ty4">Hủy</button>
-                            <button type="button" class="btn_ty3">Lưu thông tin</button>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
