@@ -3,10 +3,10 @@
         <div class="cart__header">
             <div class="container">
                 <div class="flex-lc">
-                    <h4><i class="icon icon-cart"></i> Giỏ hàng</h4>
+                    <h4 class="flex-lc"><i class="icon icon-cart"></i> Giỏ hàng</h4>
                     <div class="space"></div>
                     <div class="address flex-lc">
-                        <h5><i class="icon icon-transport"></i>Giao tới địa chỉ: </h5>
+                        <h5 class="flex-lc"><i class="icon icon-transport"></i>Giao tới địa chỉ: </h5>
                         <div class="address__info">
                             <span>Phương Thảo - 0958xxx996</span>
                             74 Doãn Kế Thiện, Cầu Giấy, HN
@@ -164,18 +164,18 @@
             <div class="header">
                 <div class="container flex-lc">
                     <label class="checkbox">
-                        <input type="checkbox">
+                        <input type="checkbox" checked>
                         <span class="checked"></span>
                         CHỌN TẤT CẢ sản phẩm (3)
                     </label>
                     <div class="voucher flex-lc ml-auto">
                         <p><i class="icon icon-voucher"></i> Bonbon Voucher:</p>
-                        <a href="" class="btn_voucher">Chọn Voucher</a>
+                        <a href="javascript:;" class="btn_voucher" data-toggle="modal" data-target="#modal-voucher">Chọn Voucher</a>
                     </div>
                 </div>
             </div>
-            <div class="container flex-lc pt-20 pb-20">
-                <a href="" class="btn_buy_continue flex-center"><i class="icon icon-cart"></i> Tiếp tục mua hàng</a>
+            <div class="container flex-lc pt-20 pb-30">
+                <a href="" class="btn_buy_continue flex-center"><i class="icon icon-buy"></i> Tiếp tục mua hàng</a>
                 <div class="ml-auto">
                     <div class="flex-between mb-15">
                         <div class="txt">
@@ -185,6 +185,21 @@
                         <div class="price">đ <span>10.800.000</span></div>
                     </div>
                     <a href="" class="btn_pay flex-center">Thanh toán</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal-voucher" id="modal-voucher">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Chọn Voucher</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
                 </div>
             </div>
         </div>

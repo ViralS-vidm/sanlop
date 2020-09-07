@@ -2092,10 +2092,16 @@ header .user .space {
 
 .cart__header .icon-cart, .favourite__header .icon-cart {
   margin-right: 9px;
+  width: 20px;
+  height: 20px;
+  background-position: -29px -147px;
 }
 
 .cart__header .icon-transport, .favourite__header .icon-transport {
   margin-right: 12px;
+  width: 28px;
+  height: 26px;
+  background-position: 0 -164px;
 }
 
 .cart__header span, .favourite__header span {
@@ -2123,8 +2129,11 @@ header .user .space {
 }
 
 .cart__list h2, .favourite__list h2 {
+  padding-left: 35px;
   font-weight: 600;
   font-size: 14px;
+  line-height: 20px;
+  background: url("../img/icon-tick1.png") no-repeat left center;
 }
 
 .cart__list .btn_chat, .favourite__list .btn_chat {
@@ -2141,7 +2150,10 @@ header .user .space {
 }
 
 .cart__list .icon-chat, .favourite__list .icon-chat {
-  margin-right: 8px;
+  margin: 1px 8px 0 0;
+  width: 18px;
+  height: 16px;
+  background-position: -31px -168px;
 }
 
 .cart__list .header, .favourite__list .header {
@@ -2203,7 +2215,7 @@ header .user .space {
 
 .cart__pay, .favourite__pay {
   background: #fff;
-  margin-top: 80px;
+  margin: 80px 0 -68px;
 }
 
 .cart__pay .header, .favourite__pay .header {
@@ -2224,12 +2236,16 @@ header .user .space {
   color: #f57d20;
 }
 
-.cart__pay .icon-voucher, .favourite__pay .icon-voucher {
-  margin-right: 10px;
+.cart__pay .btn_voucher:hover, .favourite__pay .btn_voucher:hover {
+  text-decoration: underline;
 }
 
-.cart__pay .icon-buy, .favourite__pay .icon-buy {
-  margin-right: 12px;
+.cart__pay .icon-voucher, .favourite__pay .icon-voucher {
+  margin-right: 10px;
+  width: 20px;
+  height: 16px;
+  background-position: -1px -210px;
+  vertical-align: middle;
 }
 
 .cart__pay label, .favourite__pay label {
@@ -2295,8 +2311,17 @@ header .user .space {
   color: #fff;
 }
 
+.cart .icon-buy, .favourite .icon-buy {
+  margin-right: 12px;
+  width: 17px;
+  height: 18px;
+  background-position: -1px -191px;
+}
+
 .cart .cl-1, .favourite .cl-1 {
   width: 735px;
+  padding-left: 34px;
+  background: url("../img/icon-tick1.png") no-repeat left center;
 }
 
 .cart .cl-2, .favourite .cl-2 {
@@ -2321,7 +2346,12 @@ header .user .space {
 
 .favourite__btn {
   background: #fff;
-  margin-top: 80px;
+  margin: 80px 0 -68px;
+}
+
+.favourite__list h2 {
+  background: none;
+  padding-left: 0;
 }
 
 .favourite .btn_buy {
@@ -2332,6 +2362,8 @@ header .user .space {
 
 .favourite .cl-1 {
   width: 770px;
+  padding-left: 0;
+  background: none;
 }
 
 .favourite .cl-2 {
@@ -2340,6 +2372,38 @@ header .user .space {
 
 .favourite .cl-3 {
   width: 190px;
+}
+
+.favourite .icon-like {
+  width: 21px;
+  height: 19px;
+  margin-right: 5px;
+  background-position: -1px -227px;
+  vertical-align: middle;
+}
+
+.modal-voucher .modal-dialog {
+  max-width: 720px;
+}
+
+.modal-voucher .modal-header {
+  padding: 22px 30px;
+  border: none;
+}
+
+.modal-voucher .modal-header h5 {
+  margin-bottom: 0;
+  font-size: 24px;
+}
+
+.modal-voucher .modal-body {
+  padding: 0 30px;
+}
+
+.modal-voucher .modal-content {
+  -webkit-border-radius: 18px;
+     -moz-border-radius: 18px;
+          border-radius: 18px;
 }
 
 .breadcrumb {
@@ -2488,6 +2552,10 @@ header .user .space {
   height: 18px;
   margin-right: 15px;
   border: 1px solid #f57d20;
+}
+
+.checkbox input:checked + span {
+  background: url("../img/icon-tick.png") no-repeat center center;
 }
 
 footer {
@@ -2683,6 +2751,7 @@ h5, h4 {
 }
 
 .icon {
+  display: inline-block;
   background: url("../img/icons.png") no-repeat 0 0;
 }
 
