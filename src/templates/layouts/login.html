@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>{{pageTitle}}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
+</head>
+<body class="{{bodyClasses}}">
+{% include "../share/header1.html" %}
+{% block content %}{% endblock %}
+{% include "../share/footer.html" %}
+<script src="./assets/js/jquery-3.1.1.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+<script src="./assets/js/slick.js"></script>
+<script src="./assets/js/page_all.js"></script>
+<script>
+    $(document).ready(function () {
+
+    });
+</script>
+</body>
+</html>
