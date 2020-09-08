@@ -1084,12 +1084,14 @@ header{
   }
   &__nav{
     ul {
-      padding-left: 42px;
+      padding-left: 42px; display: none;
       li{padding: 6px 0;}
     }
     li{list-style: none;}
-    h5{display: flex; align-items: center; margin-bottom: 0; padding: 7px; font-size: 14px;}
+    h5{display: flex; align-items: center; margin-bottom: 0; padding: 7px; font-size: 14px; cursor: pointer;}
+    h5 a{display: flex; align-items: center;}
     .active{
+      ul{display: block;}
       h5{font-weight: 600; background-image: linear-gradient(to right, #fff, rgba(#fff,.1));}
     }
     .icon{width: 26px; height: 26px; margin-right: 10px; background: url("#{$img-path}/icon-profile.png") no-repeat 0 0;}

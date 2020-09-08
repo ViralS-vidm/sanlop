@@ -3175,6 +3175,7 @@ header .btn_remove:hover {
 
 .profile__nav ul {
   padding-left: 42px;
+  display: none;
 }
 
 .profile__nav ul li {
@@ -3199,6 +3200,24 @@ header .btn_remove:hover {
   margin-bottom: 0;
   padding: 7px;
   font-size: 14px;
+  cursor: pointer;
+}
+
+.profile__nav h5 a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile__nav .active ul {
+  display: block;
 }
 
 .profile__nav .active h5 {
