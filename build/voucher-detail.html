@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Tài khoản ngân hàng</title>
+    <title>Chi tiết voucher</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="./assets/css/style.css" rel="stylesheet">
@@ -108,114 +108,28 @@
 </header>
 
 <main>
-    <div class="box-breadcrumb">
-        <ul class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Tài khoản</li>
-        </ul>
-    </div>
-    <div class="profile container">
-        <div class="profile__banner">
-            <img src="./assets/img/banner-profile.jpg" alt="">
+    <div class="voucher-detail">
+        <div class="voucher flex pr">
+            <div class="voucher__code flex-center">
+                <span>GHO889662</span>
+                <span>Giảm 20%</span>
+            </div>
+            <div class="voucher__content flex">
+                <p>Giảm 70% tối đa 35.000đ vào 11h sáng hàng ngày. Áp dụng 1 số cửa hàng nhất định. HSD 30/08/2020</p>
+            </div>
         </div>
-        <div class="row">
-            <div class="col-lg-3">
-                <div class="profile__info flex-lc">
-    <img src="./assets/img/logo-shop.png" alt="">
-    <div class="info">
-        <p>ROLL by Just Tires </p>
-        <span>Hoạt động từ 04/2016</span>
-    </div>
-</div>
-<ul class="profile__nav">
-    <li>
-        <h5><i class="icon icon-pr1"></i>Thông tin tài khoản</h5>
-        <ul>
-            <li><a href="/tai-khoan.html">Thông tin tài khoản</a></li>
-            <li><a href="">Mật khẩu</a></li>
-            <li><a href="">Địa chỉ</a></li>
-        </ul>
-    </li>
-    <li>
-        <h5><a href="/bank.html"><i class="icon icon-pr2"></i>Tài khoản ngân hàng</a></h5>
-    </li>
-    <li>
-        <h5><a href="/order.html"><i class="icon icon-pr3"></i>Đơn mua hàng</a></h5>
-    </li>
-    <li>
-        <h5><i class="icon icon-pr4"></i>Thông báo</h5>
-        <ul>
-            <li><a href="/notification.html">Cập nhật đơn hàng</a></li>
-            <li><a href="/san-deal.html">Săn deal giá tốt</a></li>
-        </ul>
-    </li>
-    <li>
-        <h5><a href="/vi-voucher.html"><i class="icon icon-pr5"></i>Ví Voucher</a></h5>
-    </li>
-</ul>
-            </div>
-            <div class="col-lg-9">
-                <div class="bank_acount">
-                    <div class="flex-lc mb-20">
-                        <h4>Tài khoản ngân hàng của tôi</h4>
-                        <a href="" title="" class="btn_ty3 btn_add_account ml-auto">Thêm tài khoản</a>
-                    </div>
-                    <div class="account flex">
-                        <div class="account__img"><img src="./assets/img/img-bank.png" alt=""></div>
-                        <div class="account__content">
-                            <h5 class="flex-lc">VCB - NH TMCP NGOAI THUONG VIET NAM <span class="accuracy"></span><span class="df">Mặc định</span></h5>
-                            <p>Trần Phương Thảo - *9985</p>
-                            <p>Chi nhánh: Chi nhánh Thanh Xuân</p>
-                        </div>
-                        <div class="account__action flex-lc ml-auto">
-                            <a href="" class="btn_remove">Xóa</a>
-                            <a href="" class="btn_ty4 btn_set_defalt flex-center set">Thiết lập mặc định</a>
-                        </div>
-                    </div>
-                    <div class="account flex">
-                        <div class="account__img"><img src="./assets/img/img-bank.png" alt=""></div>
-                        <div class="account__content">
-                            <h5 class="flex-lc">VCB - NH TMCP NGOAI THUONG VIET NAM <span class="accuracy"></span></h5>
-                            <p>Trần Phương Thảo - *9985</p>
-                            <p>Chi nhánh: Chi nhánh Thanh Xuân</p>
-                        </div>
-                        <div class="account__action flex-lc ml-auto">
-                            <a href="" class="btn_remove">Xóa</a>
-                            <a href="" class="btn_ty4 btn_set_defalt flex-center set">Thiết lập mặc định</a>
-                        </div>
-                    </div>
-                    <div class="account flex">
-                        <div class="account__img"><img src="./assets/img/img-bank.png" alt=""></div>
-                        <div class="account__content">
-                            <h5 class="flex-lc">VCB - NH TMCP NGOAI THUONG VIET NAM <span class="not_accuracy">Chưa xác thực</span></h5>
-                            <p>Trần Phương Thảo - *9985</p>
-                            <p>Chi nhánh: Chi nhánh Thanh Xuân</p>
-                        </div>
-                        <div class="account__action flex-lc ml-auto">
-                            <a href="" class="btn_remove">Xóa</a>
-                            <a href="" class="btn_ty4 btn_set_defalt flex-center set">Thiết lập mặc định</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="bank_acount">
-                    <div class="flex-lc mb-20">
-                        <h4>Thẻ tín dụng/ghi nợ</h4>
-                        <a href="" title="" class="btn_ty3 btn_add_account ml-auto">Thêm tài khoản</a>
-                    </div>
-                    <div class="account flex">
-                        <div class="account__img"><img src="./assets/img/img-bank.png" alt=""></div>
-                        <div class="account__content">
-                            <h5 class="flex-lc">Thẻ Visa *9986<span class="accuracy"></span></h5>
-                            <p>Chủ thẻ: Trần Phương Thảo </p>
-                            <p>Ngày hết hạn</p>
-                        </div>
-                        <div class="account__action flex-lc ml-auto">
-                            <a href="" class="btn_remove">Xóa</a>
-                            <a href="" class="btn_ty4 btn_set_defalt flex-center set">Thiết lập mặc định</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <article>
+            <p><strong>Ưu đãi: Mã giảm giá |</strong> Tất cả hình thức thanh toán</p>
+            <p><strong>Hiệu lực:</strong> 19.08.2020 00:00 - 31.08.2020 23:59</p>
+            <p><strong>Thiết bị:</strong> Tất cả các thiết bị, phiên bản website</p>
+            <p><strong>Thanh Toán:</strong> Tất cả các hình thức thanh toán</p>
+            <br>
+            <p><strong>Chi tiết:</strong> Sử dụng mã miễn phí vận chuyển cho sản phẩm thuộc gian hàng thương mại Chợ đêm tôi yêu.</p>
+            <p>Đơn vị vận chuyển khả dụng: Viettel Post, Vietnam Post, J&T Express, Ninja Van</p>
+            <p>Hình thức thanh toán: tất cả Mã chỉ được hoàn theo quy định. Hạn sử dụng: 19/08/2020 00:00 đến 31/08/2020 23:59.</p>
+        </article>
+        <div class="box-btn">
+            <a href="" title="Sử dụng ngay" class="btn_ty3 flex-center">Sử dụng ngay</a>
         </div>
     </div>
 </main>

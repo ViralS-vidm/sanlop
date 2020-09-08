@@ -1,0 +1,68 @@
+<main>
+    <div class="box-breadcrumb">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Tài khoản</li>
+        </ul>
+    </div>
+    <div class="profile container">
+        <div class="profile__banner">
+            <img src="./assets/img/banner-profile.jpg" alt="">
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                {% include "../share/profile-nav.html" %}
+            </div>
+            <div class="col-lg-9">
+                <div class="notification">
+                    <ul class="tab nav">
+                        <li><a href="#markread" data-toggle="tab" class="active">Đánh dấu đã đọc tất cả</a></li>
+                        <li><a href="#unread" data-toggle="tab">Chưa đọc</a></li>
+                        <li><a href="#read" data-toggle="tab">Đã đọc</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="markread" class="tab-pane fade show active">
+                            <article class="flex post post-deal">
+                                <a href="" class="post__thumb"><img src="./assets/img/banner1.jpg" alt=""></a>
+                                <div class="post__content">
+                                    <h3><a href="">Bình ổn giá - Chung tay mùa dịch</a></h3>
+                                    <p>Có rất nhiều shop đã thực hiện tiếp thị liên kết vô cùng hiệu quả. Cùng ad nhìn lại ngày 8.8 của các bạn để thu thập bí kíp, sẵn sàng cho Ngày siêu mua sắm 9.9 nhé!</p>
+                                </div>
+                                <a href="" title="" class="btn_view ml-auto">Xem chi tiết</a>
+                            </article>
+                            <article class="flex post post-deal">
+                                <a href="" class="post__thumb"><img src="./assets/img/banner2.jpg" alt=""></a>
+                                <div class="post__content">
+                                    <h3><a href="">Phiên chợ cuối tuần 24/08/2018</a></h3>
+                                    <p>Có rất nhiều shop đã thực hiện tiếp thị liên kết vô cùng hiệu quả. Cùng ad nhìn lại ngày 8.8 của các bạn để thu thập bí kíp, sẵn sàng cho Ngày siêu mua sắm 9.9 nhé!</p>
+                                </div>
+                                <a href="" title="" class="btn_view ml-auto">Xem chi tiết</a>
+                            </article>
+                            <article class="flex post post-deal">
+                                <a href="" class="post__thumb"><img src="./assets/img/banner3.jpg" alt=""></a>
+                                <div class="post__content">
+                                    <h3><a href="">Lương về Deal tràn trề</a></h3>
+                                    <p>Sản phẩm của bạn sẽ được giao trước 24/12/2019. Yêu cầu hoàn tiền trước khi hết hạn đảm bảo nếu bạn không chấp nhận sản phẩm nhận được. Sau ngày 24/12/2019 mọi khiếu nại về sản phẩm sẽ không được giải quyết.</p>
+                                </div>
+                                <a href="" title="" class="btn_view ml-auto">Xem chi tiết</a>
+                            </article>
+                        </div>
+                        <div id="unread" class="tab-pane fade">
+                            <article class="flex post post-deal">
+                                <a href="" class="post__thumb"><img src="./assets/img/thumb4.jpg" alt=""></a>
+                                <div class="post__content">
+                                    <h3><a href="">Nhắc nhở: Bạn đã nhận được hàng chưa</a></h3>
+                                    <p>Sản phẩm của bạn sẽ được giao trước 24/12/2019. Yêu cầu hoàn tiền trước khi hết hạn đảm bảo nếu bạn không chấp nhận sản phẩm nhận được. Sau ngày 24/12/2019 mọi khiếu nại về sản phẩm sẽ không được giải quyết.</p>
+                                </div>
+                                <a href="" title="" class="btn_view ml-auto">Xem chi tiết</a>
+                            </article>
+                        </div>
+                        <div id="read" class="tab-pane fade">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
