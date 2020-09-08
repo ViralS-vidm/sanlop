@@ -131,26 +131,26 @@
     <li>
         <h5><i class="icon icon-pr1"></i>Thông tin tài khoản</h5>
         <ul>
-            <li><a href="/tai-khoan.html">Thông tin tài khoản</a></li>
+            <li><a href="http://localhost:8000/tai-khoan.html">Thông tin tài khoản</a></li>
             <li><a href="">Mật khẩu</a></li>
             <li><a href="">Địa chỉ</a></li>
         </ul>
     </li>
     <li>
-        <h5><a href="/bank.html"><i class="icon icon-pr2"></i>Tài khoản ngân hàng</a></h5>
+        <h5><a href="http://localhost:8000/bank.html"><i class="icon icon-pr2"></i>Tài khoản ngân hàng</a></h5>
     </li>
     <li>
-        <h5><a href="/order.html"><i class="icon icon-pr3"></i>Đơn mua hàng</a></h5>
+        <h5><a href="http://localhost:8000/order.html"><i class="icon icon-pr3"></i>Đơn mua hàng</a></h5>
     </li>
     <li>
         <h5><i class="icon icon-pr4"></i>Thông báo</h5>
         <ul>
-            <li><a href="/notification.html">Cập nhật đơn hàng</a></li>
-            <li><a href="/san-deal.html">Săn deal giá tốt</a></li>
+            <li><a href="http://localhost:8000/notification.html">Cập nhật đơn hàng</a></li>
+            <li><a href="http://localhost:8000/san-deal.html">Săn deal giá tốt</a></li>
         </ul>
     </li>
     <li>
-        <h5><a href="/vi-voucher.html"><i class="icon icon-pr5"></i>Ví Voucher</a></h5>
+        <h5><a href="http://localhost:8000/vi-voucher.html"><i class="icon icon-pr5"></i>Ví Voucher</a></h5>
     </li>
 </ul>
             </div>
@@ -375,30 +375,7 @@
 <script src="./assets/js/page_all.js"></script>
 <script>
     $(document).ready(function () {
-        $('.slider_sale').slick({
-            centerMode: false,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: false,
-            centerPadding: 0,
-            autoplay: true,
-            dots: false,
-            arrows: true
-        });
-        $('.filter__list h5').on('click',function () {
-           $(this).parent().toggleClass('active');
-        });
 
-        $('.search_related_list').slick({
-            centerMode: false,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            infinite: false,
-            centerPadding: 0,
-            autoplay: true,
-            dots: false,
-            arrows: true
-        });
     });
 </script>
 </body>

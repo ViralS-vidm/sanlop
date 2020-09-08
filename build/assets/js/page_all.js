@@ -15,7 +15,19 @@
   }); // active navbar of page current
 
   var urlcurrent = window.location.href;
-  $(".navbar-nav li a[href$='" + urlcurrent + "']").addClass('active'); // effect navbar
+  $(".profile__nav li a[href$='" + urlcurrent + "']").addClass('active');
+  $(window).on('load', function () {
+    $('.profile__nav li a.active').parents('li').addClass('current');
+  }); // show menu
+
+  $('.profile__nav li').click(function () {
+    $('.profile__nav li').removeClass('active');
+    $(this).addClass('active');
+  }); //show filter
+
+  $('.filter__list h5').on('click', function () {
+    $(this).parent().toggleClass('active');
+  }); // effect navbar
 
   $(window).scroll(function () {
     if ($(this).scrollTop() > 0) {
@@ -71,11 +83,6 @@
   });
   $('.add_amount').click(function () {
     add_amout(this);
-  }); // show menu
-
-  $('.profile__nav li').click(function () {
-    $('.profile__nav li').removeClass('active');
-    $(this).addClass('active');
   });
 }); //scroll effect
 
