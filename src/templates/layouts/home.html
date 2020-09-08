@@ -35,9 +35,23 @@
             slidesToScroll: 1,
             infinite: true,
             centerPadding: 0,
-            autoplay: true,
+            autoplay: false,
             dots: false,
-            arrows: true
+            arrows: true,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 4,
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                }
+            ]
         });
         $('.trend__list').slick({
             centerMode: false,
@@ -45,9 +59,23 @@
             slidesToScroll: 1,
             infinite: true,
             centerPadding: 0,
-            autoplay: true,
+            autoplay: false,
             dots: false,
-            arrows: true
+            arrows: true,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                }
+            ]
         });
         $('.category_pr_list').slick({
             centerMode: false,
@@ -56,9 +84,23 @@
             slidesToScroll: 1,
             infinite: true,
             centerPadding: 0,
-            autoplay: true,
+            autoplay: false,
             dots: false,
-            arrows: true
+            arrows: true,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 4,
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                }
+            ]
         });
 
 
