@@ -54,9 +54,23 @@ $(document).ready(function () {
         slidesToScroll: 1,
         infinite: true,
         centerPadding: 0,
-        autoplay: true,
+        autoplay: false,
         dots: false,
-        arrows: true
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
 
     // function

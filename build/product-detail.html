@@ -310,7 +310,7 @@
             </ul>
         </div>
         <div class="row">
-            <div class="col-lg-9">
+            <div class="col-lg-9 col-md-9">
                 <div class="info_detail">
                     <h4>Chi tiết sản phẩm</h4>
                     <div class="table-info">
@@ -394,7 +394,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-3 pl-0">
+            <div class="col-lg-3 col-md-3 pl-0">
                 <div class="discount">
                     <div class="discount__header">
                         <img src="./assets/img/bg-shop.jpg" alt="">
@@ -538,18 +538,40 @@
             slidesToScroll: 1,
             infinite: false,
             centerPadding: 0,
-            autoplay: true,
+            autoplay: false,
             dots: false,
-            arrows: true
+            arrows: true,
+            responsive: [
+                {
+                    breakpoint: 1025,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                }
+            ]
         });
         $('.list_img').slick({
             centerMode: false,
             slidesToShow: 5,
             slidesToScroll: 1,
-            infinite: false,
+            infinite: true,
             centerPadding: 0,
             vertical: true,
-            arrows: true
+            arrows: true,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        vertical: false,
+                    }
+                }
+            ]
         });
 
         $('.list_img a').click(function (e) {
