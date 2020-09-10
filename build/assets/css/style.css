@@ -5410,6 +5410,9 @@ button:focus {
   .notification .post p {
     font-size: 13px;
   }
+  .order-process .process::after {
+    width: 87%;
+  }
 }
 
 @media (max-width: 760px) {
@@ -6045,6 +6048,9 @@ button:focus {
   }
   .order-process {
     padding: 10px;
+  }
+  .order-process .process::after {
+    width: 80%;
   }
   .order-process .process p {
     margin-top: 30px;

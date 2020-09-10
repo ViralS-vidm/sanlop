@@ -1948,7 +1948,9 @@ button{
       p{font-size: 13px;}
     }
   }
-
+  .order-process{
+    .process::after{width: 87%;}
+  }
 }
 @media(max-width: 760px) {
   header{
@@ -2247,6 +2249,7 @@ button{
   .order-process{
     padding: 10px;
     .process{
+      &::after{width: 80%;}
       p{margin-top: 30px; font-size: 13px;}
       >*+*{margin-left: 8.1%;}
       li:nth-child(3){width: 70px;}
