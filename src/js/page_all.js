@@ -47,6 +47,21 @@ $(document).ready(function () {
         }
     });
 
+   $('.form-group input').on('focus',function () {
+      $(this).parent().addClass('focus');
+   });
+
+    //hiden show password
+    $(".toggle-password").click(function() {
+        $(this).toggleClass("show");
+        var input = $($(this).attr("toggle"));
+        if (input.attr("type") == "password") {
+            input.attr("type", "text");
+        } else {
+            input.attr("type", "password");
+        }
+    });
+
     //slick js
     $('.product_like_list').slick({
         centerMode: false,

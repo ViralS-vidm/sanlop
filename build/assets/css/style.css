@@ -2354,15 +2354,31 @@ header .btn_remove:hover {
 
 .cart .payment .method h5, .favourite .payment .method h5, .paycart .payment .method h5 {
   margin-bottom: 0;
-  min-width: 360px;
+  min-width: 300px;
+}
+
+.cart .payment .method a, .favourite .payment .method a, .paycart .payment .method a {
+  color: #f57d20;
 }
 
 .cart .payment .method span, .favourite .payment .method span, .paycart .payment .method span {
-  color: #f57d20;
+  margin-right: 10px;
 }
 
 .cart .payment .voucher p, .favourite .payment .voucher p, .paycart .payment .voucher p {
   min-width: 320px;
+}
+
+.cart .payment .voucher span, .favourite .payment .voucher span, .paycart .payment .voucher span {
+  display: inline-block;
+  margin-left: 40px;
+  background: #0c8cee;
+  color: #fff;
+  font-size: 12px;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  padding: 2px 10px;
 }
 
 .cart .payment label, .favourite .payment label, .paycart .payment label {
@@ -2598,18 +2614,26 @@ header .btn_remove:hover {
 }
 
 .paycart .transport h5 {
-  margin-bottom: 0;
+  margin-bottom: 10px;
   white-space: nowrap;
 }
 
 .paycart .transport input, .paycart .transport textarea {
   width: 270px;
   height: 40px;
-  margin-left: 22px;
   background-color: #f2f2f4;
   padding: 0 19px;
   color: #999;
   border: none;
+}
+
+.paycart .transport select {
+  border: none;
+  color: #f57c00;
+}
+
+.paycart .transport select:focus {
+  outline: none;
 }
 
 .paycart .transport__note {
@@ -2618,29 +2642,32 @@ header .btn_remove:hover {
           flex-wrap: nowrap;
 }
 
-.paycart .transport__method a, .paycart .transport__method span {
-  display: block;
-  margin-top: 8px;
-  color: #f57d20;
+.paycart .transport__method > * + * {
+  margin-top: 15px;
 }
 
-.paycart .transport__method span {
+.paycart .transport__method h5 {
+  min-width: 380px;
+}
+
+.paycart .transport__method a, .paycart .transport__method span {
+  display: block;
+  color: #111;
+}
+
+.paycart .total_pay {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+     -moz-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 14px;
+  border-top: 1px solid #e4e4e4;
   font-weight: 700;
 }
 
-.paycart .transport__fee {
-  text-align: right;
-}
-
-.paycart .transport__fee span {
-  display: block;
-  margin-bottom: 10px;
-  font-weight: 600;
-}
-
-.paycart .transport__fee p {
-  max-width: 176px;
-  color: #999;
+.paycart .total_pay p {
+  min-width: 380px;
 }
 
 .paycart .address {
@@ -2677,6 +2704,54 @@ header .btn_remove:hover {
 .paycart .box-btn a {
   margin: 0 5px;
   padding: 6px 16px;
+}
+
+.paycart .info_pay div {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.paycart .info_pay span {
+  margin-left: auto;
+}
+
+.paycart .info_pay b {
+  display: block;
+}
+
+.paycart .info_pay .total {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.paycart .info_pay .total p {
+  text-align: right;
+}
+
+.paycart .info_pay .total .amount {
+  color: #f57c00;
+  text-align: right;
+  font-weight: normal;
+}
+
+.paycart .info_pay .price {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.paycart .info_pay .price span {
+  font-size: 18px;
+  margin-left: 5px;
 }
 
 .paycart h2 {
@@ -2835,44 +2910,41 @@ header .btn_remove:hover {
 }
 
 .box-order {
-  background: #fff;
   padding-bottom: 10px;
 }
 
 .box-order .tab {
-  padding: 5px 15px 0 !important;
-  border-bottom: 1px solid #e4e4e4;
+  background: #fff;
+  margin-bottom: 15px;
+  -webkit-box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.15);
+     -moz-box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.15);
   -webkit-flex-wrap: nowrap;
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
   overflow: auto;
   overflow-y: hidden;
 }
 
 .box-order .tab a {
   display: block;
-  padding: 15px 30px;
+  padding: 15px 14px;
   position: relative;
   white-space: nowrap;
 }
 
 .box-order .tab .active {
   color: #f57d20;
-}
-
-.box-order .tab .active::after {
-  content: "";
-  width: 100%;
-  height: 3px;
-  background: #f57d20;
-  position: absolute;
-  left: 0;
-  bottom: -1px;
+  font-weight: 700;
 }
 
 .box-order .order {
-  margin: 20px;
-  border: 1px solid #d9d9d9;
+  margin-bottom: 15px;
+  background: #fff;
+  padding: 10px;
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
@@ -2899,20 +2971,22 @@ header .btn_remove:hover {
 }
 
 .box-order .order__header {
-  padding: 10px;
-  background: #f9f9f9;
-  border-bottom: 1px solid #d9d9d9;
+  padding: 5px 5px 15px;
+  border-bottom: 1px solid #f2f2f4;
+}
+
+.box-order .order__header strong {
+  margin-right: 10px;
 }
 
 .box-order .order__bottom {
   padding: 7px 12px;
   background: #f9f9f9;
-  border-top: 1px solid #d9d9d9;
 }
 
 .box-order .item {
-  padding: 20px 12px;
-  border-bottom: 1px solid #d9d9d9;
+  padding: 15px 5px;
+  border-bottom: 1px solid #f2f2f4;
 }
 
 .box-order .item:last-child {
@@ -2947,34 +3021,80 @@ header .btn_remove:hover {
 }
 
 .box-order .price {
+  margin: 8px 0;
   font-weight: 700;
   text-align: right;
 }
 
 .box-order .price span {
   font-weight: 400;
-  display: block;
+  margin-right: 15px;
   margin-top: 2px;
 }
 
 .box-order .box-btn a {
-  padding: 8px 25px;
-  margin: 5px 10px 5px 0;
+  padding: 5px 12px;
   background: #fff;
-  border: 1px solid #d9d9d9;
+  margin: 5px 10px 5px 0;
+  color: #111;
+  font-size: 13px;
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
 }
 
 .box-order .box-btn a:hover {
-  background: #d9d9d9;
+  background: #f57d20;
+  color: #fff;
+}
+
+.box-order .box-btn .btn_sub {
+  background: #f57d20;
+  color: #fff;
+}
+
+.box-order .box-btn .btn_sub:hover {
+  background: #df7320;
+  color: #fff;
+}
+
+.box-order .status_order {
+  margin-left: auto;
+  padding: 5px 12px;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  font-size: 13px;
+}
+
+.box-order .status_order.received {
+  background: #f57d20;
+  color: #fff;
+}
+
+.box-order .total {
+  font-size: 18px;
 }
 
 .box-order .total span {
-  font-size: 18px;
   color: #e00000;
   font-weight: 700;
+}
+
+.box-order .btn_contact {
+  margin: 2px 0;
+  padding: 4px 11px;
+  background: #f2f2f4;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  color: #111;
+  font-size: 13px;
+}
+
+.box-order .btn_contact:hover {
+  background: #f57d20;
+  color: #fff;
 }
 
 .notification .tab {
@@ -3102,7 +3222,7 @@ header .btn_remove:hover {
 .login form, .register form {
   width: 100%;
   max-width: 500px;
-  padding: 40px;
+  padding: 35px 40px 40px;
   background: #fff;
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
@@ -3132,6 +3252,14 @@ header .btn_remove:hover {
   position: relative;
 }
 
+.login .form-group.focus label.error, .register .form-group.focus label.error, .modal_password .form-group.focus label.error {
+  display: none;
+}
+
+.login .form-group.error, .register .form-group.error, .modal_password .form-group.error {
+  border: 1px solid #ee2c3c;
+}
+
 .login .form-action, .register .form-action, .modal_password .form-action {
   margin-top: 30px;
   -webkit-box-pack: end;
@@ -3145,7 +3273,7 @@ header .btn_remove:hover {
   display: block;
   margin-bottom: 0;
   font-size: 12px;
-  color: #666;
+  color: #111;
   text-transform: uppercase;
   white-space: nowrap;
   overflow: hidden;
@@ -3153,12 +3281,23 @@ header .btn_remove:hover {
      text-overflow: ellipsis;
 }
 
+.login label.error, .register label.error, .modal_password label.error {
+  font-size: 14px;
+  color: #ee2c3c;
+  text-transform: none;
+  position: absolute;
+  bottom: 5px;
+}
+
 .login input, .register input, .modal_password input {
   border: none;
   width: 80%;
   height: 30px;
+  background: transparent;
   font-size: 16px;
   font-weight: 600;
+  position: relative;
+  z-index: 2;
 }
 
 .login input::-webkit-input-placeholder, .register input::-webkit-input-placeholder, .modal_password input::-webkit-input-placeholder {
@@ -3204,28 +3343,50 @@ header .btn_remove:hover {
   height: 50px;
 }
 
-.login .form-group {
-  margin-bottom: 20px;
+.login .btn_back, .register .btn_back, .modal_password .btn_back {
+  margin-right: 25px;
 }
 
-.login .forgot-password {
-  margin-top: -10px;
-  padding: 5px 0;
-  text-align: right;
+.login .rule p, .register .rule p, .modal_password .rule p {
+  margin: 5px 0;
+  color: #666;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.login .form-action {
-  margin-top: 10px;
+.login .rule p::before, .register .rule p::before, .modal_password .rule p::before {
+  content: "";
+  width: 13px;
+  height: 13px;
+  display: block;
+  margin-right: 8px;
+  background: url("../img/icon-tick3.png") no-repeat 0 0/contain;
 }
 
-.login .login-other h5 {
+.login .rule p.active, .register .rule p.active, .modal_password .rule p.active {
+  color: #11a21b;
+}
+
+.login .rule p.active::before, .register .rule p.active::before, .modal_password .rule p.active::before {
+  background: url("../img/icon-tick2.png") no-repeat 0 0/contain;
+}
+
+.login .login-other h5, .register .login-other h5, .modal_password .login-other h5 {
   margin: 20px 0;
   text-align: center;
   font-size: 16px;
   color: #999;
 }
 
-.login .line {
+.login .line, .register .line, .modal_password .line {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -3241,18 +3402,18 @@ header .btn_remove:hover {
   color: #999;
 }
 
-.login .line span {
+.login .line span, .register .line span, .modal_password .line span {
   padding: 0 30px;
 }
 
-.login .line::after, .login .line::before {
+.login .line::after, .login .line::before, .register .line::after, .register .line::before, .modal_password .line::after, .modal_password .line::before {
   content: "";
   height: 1px;
   width: 100%;
   background: #e4e4e4;
 }
 
-.login .box-btn {
+.login .box-btn, .register .box-btn, .modal_password .box-btn {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
      -moz-box-pack: center;
@@ -3260,11 +3421,11 @@ header .btn_remove:hover {
           justify-content: center;
 }
 
-.login .box-btn > * + * {
+.login .box-btn > * + *, .register .box-btn > * + *, .modal_password .box-btn > * + * {
   margin-left: 20px;
 }
 
-.login .box-btn a {
+.login .box-btn a, .register .box-btn a, .modal_password .box-btn a {
   width: 200px;
   height: 40px;
   -webkit-border-radius: 4px;
@@ -3276,15 +3437,15 @@ header .btn_remove:hover {
   position: relative;
 }
 
-.login .box-btn .login-facebook {
+.login .box-btn .login-facebook, .register .box-btn .login-facebook, .modal_password .box-btn .login-facebook {
   background: #4267b2;
 }
 
-.login .box-btn .login-google {
+.login .box-btn .login-google, .register .box-btn .login-google, .modal_password .box-btn .login-google {
   background: #ee2c3c;
 }
 
-.login .box-btn .icon {
+.login .box-btn .icon, .register .box-btn .icon, .modal_password .box-btn .icon {
   position: absolute;
   left: 20px;
   top: 50%;
@@ -3295,21 +3456,67 @@ header .btn_remove:hover {
           transform: translateY(-50%);
 }
 
-.login .box-btn .icon-face {
+.login .box-btn .icon-face, .register .box-btn .icon-face, .modal_password .box-btn .icon-face {
   width: 8px;
   height: 14px;
   background-position: -24px -212px;
 }
 
-.login .box-btn .icon-google {
+.login .box-btn .icon-google, .register .box-btn .icon-google, .modal_password .box-btn .icon-google {
   width: 16px;
   height: 10px;
   background-position: -25px -229px;
 }
 
+.login sup, .register sup, .modal_password sup {
+  color: #f57d20;
+}
+
+.login .form-group {
+  margin-bottom: 20px;
+}
+
+.login .forgot-password {
+  margin-top: -10px;
+  padding: 5px 0;
+  text-align: right;
+}
+
+.login .form-action {
+  margin-top: 10px;
+}
+
+.register .line {
+  margin: 25px 0;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+.toggle-password i {
+  font-size: 20px;
+  color: #999;
+  cursor: pointer;
+}
+
+.toggle-password .hide {
+  display: none;
+}
+
+.toggle-password.show .hide {
+  display: block;
+}
+
+.toggle-password.show .show {
+  display: none;
+}
+
 .profile h2 {
   font-size: 18px;
-  margin: 15px 0 20px;
+  margin: 15px 0;
 }
 
 .profile__banner {
@@ -3562,6 +3769,20 @@ header .btn_remove:hover {
 
 .profile .checkbox input:checked + span::after {
   display: block;
+}
+
+.profile .search {
+  width: 100%;
+  max-width: 370px;
+}
+
+.profile .search input {
+  width: 100%;
+  height: 40px;
+  padding: 0 15px 0 45px;
+  background: #e4e4e4 url("../img/icon-s1.png") no-repeat 15px center;
+  color: #999;
+  border: none;
 }
 
 .box-voucher form, .modal_voucher form {
@@ -4058,6 +4279,51 @@ header .btn_remove:hover {
 .modal_password .btn_send_otp {
   color: #999;
   font-weight: 400;
+}
+
+.modal_notifi .close {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+}
+
+.modal_notifi .modal-dialog {
+  max-width: 450px;
+}
+
+.modal_notifi .modal-content {
+  padding: 40px 35px;
+  text-align: center;
+}
+
+.modal_notifi .modal-content h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #f57d20;
+}
+
+.modal_notifi .modal-content img {
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.modal_notifi .modal-content input, .modal_notifi .modal-content .btn_submit {
+  height: 40px;
+  width: 100%;
+  border: 1px solid #e4e4e4;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.modal_notifi .modal-content input {
+  margin: 15px 0;
+  padding: 0 15px;
+}
+
+.modal_notifi .modal-content .btn_submit {
+  background: #f2f2f4;
 }
 
 .box-breadcrumb {
@@ -5155,14 +5421,24 @@ button:focus {
   .paycart .header > div {
     margin: 5px 0;
   }
+  .paycart .transport {
+    padding: 15px;
+  }
   .paycart .transport input, .paycart .transport textarea {
     width: 100%;
   }
   .paycart .transport__note {
     width: 100%;
   }
-  .paycart .transport__method, .paycart .transport__fee {
-    max-width: 50%;
+  .paycart .transport__method {
+    width: 100%;
+  }
+  .paycart .transport__method > div div {
+    margin-right: auto;
+  }
+  .paycart .transport__method h5 {
+    min-width: 50%;
+    margin-right: auto;
   }
   .paycart .address h4 {
     margin-bottom: 20px;
@@ -5172,6 +5448,9 @@ button:focus {
     position: relative;
     right: 0;
     top: 0;
+  }
+  .paycart .total_pay p {
+    min-width: 50%;
   }
   .paycart__bottom .voucher {
     padding: 15px;
@@ -5204,6 +5483,9 @@ button:focus {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .cart .payment .voucher span, .favourite .payment .voucher span, .paycart .payment .voucher span {
+    margin-left: 20px;
+  }
   .cart .payment .voucher p, .favourite .payment .voucher p, .paycart .payment .voucher p {
     min-width: auto;
   }
@@ -5227,27 +5509,31 @@ button:focus {
     max-width: 400px;
     width: 100%;
   }
-  .login, .register {
+  .login, .register, .modal_password {
     padding: 25px 0;
+    margin-bottom: -30px;
   }
-  .login .intro, .register .intro {
+  .login .form-group, .register .form-group, .modal_password .form-group {
+    padding: 10px 15px 0;
+  }
+  .login .intro, .register .intro, .modal_password .intro {
     margin-bottom: 20px;
   }
-  .login .intro p, .register .intro p {
+  .login .intro p, .register .intro p, .modal_password .intro p {
     font-size: 14px;
     margin-bottom: 5px;
   }
-  .login .intro .logo, .register .intro .logo {
+  .login .intro .logo, .register .intro .logo, .modal_password .intro .logo {
     margin-bottom: 25px;
   }
-  .login .intro, .login form, .register .intro, .register form {
+  .login .intro, .login form, .register .intro, .register form, .modal_password .intro, .modal_password form {
     max-width: 100%;
   }
-  .login .btn_register, .login .btn_login, .register .btn_register, .register .btn_login {
+  .login .btn_register, .login .btn_login, .register .btn_register, .register .btn_login, .modal_password .btn_register, .modal_password .btn_login {
     font-size: 14px;
     margin-right: 15px;
   }
-  .login .btn_send_otp, .register .btn_send_otp {
+  .login .btn_send_otp, .register .btn_send_otp, .modal_password .btn_send_otp {
     right: 5px;
     font-size: 12px;
   }
@@ -5263,12 +5549,6 @@ button:focus {
     width: -moz-calc(100% - 80px);
     width: calc(100% - 80px);
   }
-  .box-order .tab {
-    padding: 5px 5px 0 !important;
-  }
-  .box-order .order {
-    margin: 10px;
-  }
   .box-order .order__header > div {
     max-width: 50%;
   }
@@ -5277,6 +5557,9 @@ button:focus {
   }
   .box-order .item {
     padding: 12px;
+  }
+  .box-order .total {
+    font-size: 16px;
   }
   .product_related h2, .search_related h2 {
     font-size: 16px;
@@ -5408,6 +5691,15 @@ button:focus {
     height: 50px;
     margin: 5px;
   }
+  .profile .search {
+    margin-bottom: 10px;
+  }
+  .profile .search input {
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+    font-size: 13px;
+  }
   .profile__detail {
     padding: 15px;
   }
@@ -5481,6 +5773,9 @@ button:focus {
   .modal_voucher .modal-header h4 {
     font-size: 20px;
   }
+  .modal_password .modal-body {
+    padding-bottom: 30px;
+  }
   footer {
     margin-top: 30px;
     padding-top: 30px;
@@ -5519,6 +5814,9 @@ button:focus {
   }
   .login .btn_submit, .register .btn_submit, .modal_password .btn_submit {
     width: 130px;
+  }
+  .modal_password form {
+    padding: 0;
   }
   .box-voucher form, .modal_voucher form {
     -webkit-flex-wrap: wrap;

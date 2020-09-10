@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Đăng ký</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="./assets/css/style.css" rel="stylesheet">
 </head>
@@ -97,30 +98,66 @@
             <form method="" action="">
                 <h4>Đăng ký tài khoản</h4>
                 <div class="form-group">
-                    <label>Số điện thoại</label>
+                    <label>Số điện thoại <sup>*</sup></label>
                     <input type="number" name="phone" class="phone" placeholder="0965 999 663">
                     <button type="button" class="btn_send_otp">GỬI MÃ OTP</button>
                 </div>
                 <div class="form-group">
-                    <label>MÃ OPT</label>
+                    <label>MÃ OPT <sup>*</sup></label>
                     <input type="number" name="otp" placeholder="8 6 7 2">
                 </div>
                 <fieldset>
                     <h5>Tạo mật khẩu</h5>
                     <div class="form-group">
-                        <label>Mật khẩu</label>
-                        <input type="password" name="password" placeholder="*******">
+                        <label>Mật khẩu <sup>*</sup></label>
+                        <input type="password" id="password-field" name="password" placeholder="*******">
+                        <span toggle="#password-field" class="toggle-password">
+                        <i class="material-icons show">visibility</i>
+                        <i class="material-icons hide">visibility_off</i>
+                    </span>
                     </div>
                     <div class="form-group">
-                        <label>Nhập lại Mật khẩu</label>
-                        <input type="password" name="re-password" placeholder="*******">
+                        <label>Nhập lại Mật khẩu <sup>*</sup></label>
+                        <input type="password" id="password-field1" name="re-password" placeholder="*******">
+                        <span toggle="#password-field1" class="toggle-password">
+                        <i class="material-icons show">visibility</i>
+                        <i class="material-icons hide">visibility_off</i>
+                    </span>
                     </div>
                 </fieldset>
+                <div class="rule">
+                    <p class="active">Ít nhất 1 ký tự thường</p>
+                    <p>Ít nhất 1 ký tự hoa</p>
+                    <p>8-17 ký tự</p>
+                </div>
                 <div class="form-action flex-lc">
-                    <a href="" title="" class="btn_login">Quay lại đăng nhập</a>
-                    <a href="" class="btn_submit btn_ty3 flex-center">Đăng ký</a>
+                    <a href="https://thuclfc.gitlab.io/bonbon/build/login.html" title="" class="btn_login">Quay lại đăng nhập</a>
+                    <a href="javascript:;" class="btn_submit btn_ty3 flex-center" data-toggle="modal" data-target="#modal_notifi">Đăng ký</a>
+                </div>
+                <div class="login-other">
+                    <div class="line"><span>Hoặc</span></div>
+                    <div class="box-btn flex">
+                        <a href="" title="" class="login-facebook"><i class="icon icon-face"></i>Facebook</a>
+                        <a href="" title="" class="login-google"><i class="icon icon-google"></i>Google</a>
+                    </div>
                 </div>
             </form>
+        </div>
+    </div>
+    <div class="modal fade modal_notifi" id="modal_notifi">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <a href="javascript" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></a>
+                <div class="notifi">
+                    <img src="./assets/img/icon-ss.png" alt="">
+                    <h4>Đăng ký tài khoản thành công</h4>
+                    <p>Vui lòng nhập họ và tên để hoàn tất đăng ký</p>
+                    <form method="" action="">
+                        <input type="text" placeholder="Họ và tên" required>
+                        <button type="submit" class="btn_submit flex-center">Hoàn tất</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 </main>

@@ -14,15 +14,20 @@
                 {% include "../share/profile-nav.html" %}
             </div>
             <div class="col-lg-9 col-md-9">
-                <h2>Đơn mua hàng</h2>
+                <div class="flex-between">
+                    <h2>Đơn mua hàng</h2>
+                    <form action="" class="search">
+                        <input type="text" placeholder="Tìm kiếm đơn hàng  thông qua ID hoặc từ khóa">
+                    </form>
+                </div>
                 <div class="box-order">
                     <ul class="tab nav flex">
-                        <li><a href="#tab1" data-toggle="tab" class="active" >Chờ xác nhận</a></li>
-                        <li><a href="#tab2" data-toggle="tab">Chờ lấy hàng</a></li>
-                        <li><a href="#tab2" data-toggle="tab">Đang giao</a></li>
-                        <li><a href="#tab2" data-toggle="tab">Đã giao</a></li>
-                        <li><a href="#tab2" data-toggle="tab">Đã hủy</a></li>
-                        <li><a href="#tab2" data-toggle="tab">Trả hàng</a></li>
+                        <li><a href="#tab1" data-toggle="tab" class="active" >Chờ xác nhận (2)</a></li>
+                        <li><a href="#tab2" data-toggle="tab">Chờ lấy hàng (1)</a></li>
+                        <li><a href="#tab3" data-toggle="tab">Đang giao (1)</a></li>
+                        <li><a href="#tab4" data-toggle="tab">Đã giao (1)</a></li>
+                        <li><a href="#tab5" data-toggle="tab">Đã hủy (1)</a></li>
+                        <li><a href="#tab6" data-toggle="tab">Trả hàng (1)</a></li>
                     </ul>
                     <div class="tab-content">
                         <div id="tab1" class="tab-pane fade show active">
@@ -31,6 +36,7 @@
                                     <div class="flex-lc">
                                         <img src="./assets/img/logo-shop.png" class="avt" alt="">
                                         <strong>Maxxis Authentic</strong>
+                                        <a href="" class="btn_contact">Liên hệ</a>
                                     </div>
                                     <div class="id ml-auto">ID Đơn hàng <span>#4859215</span></div>
                                 </div>
@@ -40,13 +46,12 @@
                                             <a href="" class="product__thumb"><img src="./assets/img/thumb1.jpg" alt=""></a>
                                             <div class="product__content">
                                                 <h3><a href="">Lốp Xe 4 chỗ thương hiệu MICHELLI</a></h3>
-                                                <p>Lốp không xăm / Lốp bố thép</p>
+                                                <p>Loại: Lốp 11 Inch - Hoa gai A10</p>
                                             </div>
                                         </div>
-                                        <div class="type">Loại: Lốp 11 Inch - Hoa gai A10</div>
                                         <div class="price ml-auto">
+                                            <span>10 x</span>
                                             1.800.000đ
-                                            <span>x10</span>
                                         </div>
                                     </div>
                                     <div class="item flex-lc">
@@ -54,22 +59,21 @@
                                             <a href="" class="product__thumb"><img src="./assets/img/thumb1.jpg" alt=""></a>
                                             <div class="product__content">
                                                 <h3><a href="">Lốp Xe 4 chỗ thương hiệu MICHELLI</a></h3>
-                                                <p>Lốp không xăm / Lốp bố thép</p>
+                                                <p>Loại: Lốp 11 Inch - Hoa gai A10</p>
                                             </div>
                                         </div>
-                                        <div class="type">Loại: Lốp 11 Inch - Hoa gai A10</div>
                                         <div class="price ml-auto">
+                                            <span>10 x</span>
                                             1.800.000đ
-                                            <span>x10</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="order__bottom flex-lc">
                                     <div class="box-btn flex">
                                         <a href="" class="btn_cancel">Hủy đơn</a>
-                                        <a href="" class="btn_contact">Liên hệ đại lý</a>
+                                        <a href="" class="btn_view">Xem chi tiết</a>
                                     </div>
-                                    <div class="total ml-auto">Tổng thanh toán: <span>110.000 đ</span></div>
+                                    <div class="total ml-auto">Tổng số tiền: <span>216.000.000 đ</span></div>
                                 </div>
                             </div>
                             <div class="order">
@@ -77,6 +81,7 @@
                                     <div class="flex-lc">
                                         <img src="./assets/img/logo-shop.png" class="avt" alt="">
                                         <strong>Maxxis Authentic</strong>
+                                        <a href="" class="btn_contact">Liên hệ</a>
                                     </div>
                                     <div class="id ml-auto">ID Đơn hàng <span>#4859215</span></div>
                                 </div>
@@ -86,36 +91,21 @@
                                             <a href="" class="product__thumb"><img src="./assets/img/thumb1.jpg" alt=""></a>
                                             <div class="product__content">
                                                 <h3><a href="">Lốp Xe 4 chỗ thương hiệu MICHELLI</a></h3>
-                                                <p>Lốp không xăm / Lốp bố thép</p>
+                                                <p>Loại: Lốp 11 Inch - Hoa gai A10</p>
                                             </div>
                                         </div>
-                                        <div class="type">Loại: Lốp 11 Inch - Hoa gai A10</div>
                                         <div class="price ml-auto">
+                                            <span>10 x</span>
                                             1.800.000đ
-                                            <span>x10</span>
-                                        </div>
-                                    </div>
-                                    <div class="item flex-lc">
-                                        <div class="product flex">
-                                            <a href="" class="product__thumb"><img src="./assets/img/thumb1.jpg" alt=""></a>
-                                            <div class="product__content">
-                                                <h3><a href="">Lốp Xe 4 chỗ thương hiệu MICHELLI</a></h3>
-                                                <p>Lốp không xăm / Lốp bố thép</p>
-                                            </div>
-                                        </div>
-                                        <div class="type">Loại: Lốp 11 Inch - Hoa gai A10</div>
-                                        <div class="price ml-auto">
-                                            1.800.000đ
-                                            <span>x10</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="order__bottom flex-lc">
                                     <div class="box-btn flex">
                                         <a href="" class="btn_cancel">Hủy đơn</a>
-                                        <a href="" class="btn_contact">Liên hệ đại lý</a>
+                                        <a href="" class="btn_view">Xem chi tiết</a>
                                     </div>
-                                    <div class="total ml-auto">Tổng thanh toán: <span>110.000 đ</span></div>
+                                    <div class="total ml-auto">Tổng số tiền: <span>216.000.000 đ</span></div>
                                 </div>
                             </div>
                         </div>
@@ -125,6 +115,7 @@
                                     <div class="flex-lc">
                                         <img src="./assets/img/logo-shop.png" class="avt" alt="">
                                         <strong>Maxxis Authentic</strong>
+                                        <a href="" class="btn_contact">Liên hệ</a>
                                     </div>
                                     <div class="id ml-auto">ID Đơn hàng <span>#4859215</span></div>
                                 </div>
@@ -134,13 +125,12 @@
                                             <a href="" class="product__thumb"><img src="./assets/img/thumb1.jpg" alt=""></a>
                                             <div class="product__content">
                                                 <h3><a href="">Lốp Xe 4 chỗ thương hiệu MICHELLI</a></h3>
-                                                <p>Lốp không xăm / Lốp bố thép</p>
+                                                <p>Loại: Lốp 11 Inch - Hoa gai A10</p>
                                             </div>
                                         </div>
-                                        <div class="type">Loại: Lốp 11 Inch - Hoa gai A10</div>
                                         <div class="price ml-auto">
+                                            <span>10 x</span>
                                             1.800.000đ
-                                            <span>x10</span>
                                         </div>
                                     </div>
                                     <div class="item flex-lc">
@@ -148,22 +138,217 @@
                                             <a href="" class="product__thumb"><img src="./assets/img/thumb1.jpg" alt=""></a>
                                             <div class="product__content">
                                                 <h3><a href="">Lốp Xe 4 chỗ thương hiệu MICHELLI</a></h3>
-                                                <p>Lốp không xăm / Lốp bố thép</p>
+                                                <p>Loại: Lốp 11 Inch - Hoa gai A10</p>
                                             </div>
                                         </div>
-                                        <div class="type">Loại: Lốp 11 Inch - Hoa gai A10</div>
                                         <div class="price ml-auto">
+                                            <span>10 x</span>
                                             1.800.000đ
-                                            <span>x10</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="order__bottom flex-lc">
                                     <div class="box-btn flex">
                                         <a href="" class="btn_cancel">Hủy đơn</a>
-                                        <a href="" class="btn_contact">Liên hệ đại lý</a>
+                                        <a href="" class="btn_view">Xem chi tiết</a>
                                     </div>
-                                    <div class="total ml-auto">Tổng thanh toán: <span>110.000 đ</span></div>
+                                    <div class="total ml-auto">Tổng số tiền: <span>216.000.000 đ</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab3" class="tab-pane fade">
+                            <div class="order">
+                                <div class="order__header flex-lc">
+                                    <div class="flex-lc">
+                                        <img src="./assets/img/logo-shop.png" class="avt" alt="">
+                                        <strong>Maxxis Authentic</strong>
+                                        <a href="" class="btn_contact">Liên hệ</a>
+                                    </div>
+                                    <div class="id ml-auto">ID Đơn hàng <span>#4859215</span></div>
+                                </div>
+                                <div class="order__list">
+                                    <div class="item flex-lc">
+                                        <div class="product flex">
+                                            <a href="" class="product__thumb"><img src="./assets/img/thumb1.jpg" alt=""></a>
+                                            <div class="product__content">
+                                                <h3><a href="">Lốp Xe 4 chỗ thương hiệu MICHELLI</a></h3>
+                                                <p>Loại: Lốp 11 Inch - Hoa gai A10</p>
+                                            </div>
+                                        </div>
+                                        <div class="price ml-auto">
+                                            <span>10 x</span>
+                                            1.800.000đ
+                                        </div>
+                                    </div>
+                                    <div class="item flex-lc">
+                                        <div class="product flex">
+                                            <a href="" class="product__thumb"><img src="./assets/img/thumb1.jpg" alt=""></a>
+                                            <div class="product__content">
+                                                <h3><a href="">Lốp Xe 4 chỗ thương hiệu MICHELLI</a></h3>
+                                                <p>Loại: Lốp 11 Inch - Hoa gai A10</p>
+                                            </div>
+                                        </div>
+                                        <div class="price ml-auto">
+                                            <span>10 x</span>
+                                            1.800.000đ
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order__bottom flex-lc">
+                                    <div class="box-btn flex">
+                                        <a href="" class="btn_view">Xem chi tiết</a>
+                                    </div>
+                                    <div class="status_order received">Đã nhận được hàng</div>
+                                    <div class="total ml-auto">Tổng số tiền: <span>216.000.000 đ</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab4" class="tab-pane fade">
+                            <div class="order">
+                                <div class="order__header flex-lc">
+                                    <div class="flex-lc">
+                                        <img src="./assets/img/logo-shop.png" class="avt" alt="">
+                                        <strong>Maxxis Authentic</strong>
+                                        <a href="" class="btn_contact">Liên hệ</a>
+                                    </div>
+                                    <div class="id ml-auto">ID Đơn hàng <span>#4859215</span></div>
+                                </div>
+                                <div class="order__list">
+                                    <div class="item flex-lc">
+                                        <div class="product flex">
+                                            <a href="" class="product__thumb"><img src="./assets/img/thumb1.jpg" alt=""></a>
+                                            <div class="product__content">
+                                                <h3><a href="">Lốp Xe 4 chỗ thương hiệu MICHELLI</a></h3>
+                                                <p>Loại: Lốp 11 Inch - Hoa gai A10</p>
+                                            </div>
+                                        </div>
+                                        <div class="price ml-auto">
+                                            <span>10 x</span>
+                                            1.800.000đ
+                                        </div>
+                                    </div>
+                                    <div class="item flex-lc">
+                                        <div class="product flex">
+                                            <a href="" class="product__thumb"><img src="./assets/img/thumb1.jpg" alt=""></a>
+                                            <div class="product__content">
+                                                <h3><a href="">Lốp Xe 4 chỗ thương hiệu MICHELLI</a></h3>
+                                                <p>Loại: Lốp 11 Inch - Hoa gai A10</p>
+                                            </div>
+                                        </div>
+                                        <div class="price ml-auto">
+                                            <span>10 x</span>
+                                            1.800.000đ
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order__bottom flex-lc">
+                                    <div class="box-btn flex">
+                                        <a href="" class="btn_view">Xem chi tiết</a>
+                                        <a href="" class="btn_review">Đánh giá</a>
+                                    </div>
+                                    <div class="box-btn ml-auto">
+                                        <a href="" title="" class="btn_sub">Mua lần nữa</a>
+                                    </div>
+                                    <div class="total ml-auto">Tổng số tiền: <span>216.000.000 đ</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab5" class="tab-pane fade">
+                            <div class="order">
+                                <div class="order__header flex-lc">
+                                    <div class="flex-lc">
+                                        <img src="./assets/img/logo-shop.png" class="avt" alt="">
+                                        <strong>Maxxis Authentic</strong>
+                                        <a href="" class="btn_contact">Liên hệ</a>
+                                    </div>
+                                    <div class="id ml-auto">ID Đơn hàng <span>#4859215</span></div>
+                                </div>
+                                <div class="order__list">
+                                    <div class="item flex-lc">
+                                        <div class="product flex">
+                                            <a href="" class="product__thumb"><img src="./assets/img/thumb1.jpg" alt=""></a>
+                                            <div class="product__content">
+                                                <h3><a href="">Lốp Xe 4 chỗ thương hiệu MICHELLI</a></h3>
+                                                <p>Loại: Lốp 11 Inch - Hoa gai A10</p>
+                                            </div>
+                                        </div>
+                                        <div class="price ml-auto">
+                                            <span>10 x</span>
+                                            1.800.000đ
+                                        </div>
+                                    </div>
+                                    <div class="item flex-lc">
+                                        <div class="product flex">
+                                            <a href="" class="product__thumb"><img src="./assets/img/thumb1.jpg" alt=""></a>
+                                            <div class="product__content">
+                                                <h3><a href="">Lốp Xe 4 chỗ thương hiệu MICHELLI</a></h3>
+                                                <p>Loại: Lốp 11 Inch - Hoa gai A10</p>
+                                            </div>
+                                        </div>
+                                        <div class="price ml-auto">
+                                            <span>10 x</span>
+                                            1.800.000đ
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order__bottom flex-lc">
+                                    <div class="box-btn flex">
+                                        <a href="" class="btn_view">Xem chi tiết</a>
+                                    </div>
+                                    <div class="box-btn ml-auto">
+                                        <a href="" title="" class="btn_sub">Mua lần nữa</a>
+                                    </div>
+                                    <div class="total ml-auto">Tổng số tiền: <span>216.000.000 đ</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab6" class="tab-pane fade">
+                            <div class="order">
+                                <div class="order__header flex-lc">
+                                    <div class="flex-lc">
+                                        <img src="./assets/img/logo-shop.png" class="avt" alt="">
+                                        <strong>Maxxis Authentic</strong>
+                                        <a href="" class="btn_contact">Liên hệ</a>
+                                    </div>
+                                    <div class="id ml-auto">ID Đơn hàng <span>#4859215</span></div>
+                                </div>
+                                <div class="order__list">
+                                    <div class="item flex-lc">
+                                        <div class="product flex">
+                                            <a href="" class="product__thumb"><img src="./assets/img/thumb1.jpg" alt=""></a>
+                                            <div class="product__content">
+                                                <h3><a href="">Lốp Xe 4 chỗ thương hiệu MICHELLI</a></h3>
+                                                <p>Loại: Lốp 11 Inch - Hoa gai A10</p>
+                                            </div>
+                                        </div>
+                                        <div class="price ml-auto">
+                                            <span>10 x</span>
+                                            1.800.000đ
+                                        </div>
+                                    </div>
+                                    <div class="item flex-lc">
+                                        <div class="product flex">
+                                            <a href="" class="product__thumb"><img src="./assets/img/thumb1.jpg" alt=""></a>
+                                            <div class="product__content">
+                                                <h3><a href="">Lốp Xe 4 chỗ thương hiệu MICHELLI</a></h3>
+                                                <p>Loại: Lốp 11 Inch - Hoa gai A10</p>
+                                            </div>
+                                        </div>
+                                        <div class="price ml-auto">
+                                            <span>10 x</span>
+                                            1.800.000đ
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order__bottom flex-lc">
+                                    <div class="box-btn flex">
+                                        <a href="" class="btn_view">Xem chi tiết</a>
+                                    </div>
+                                    <div class="txt">Yêu cầu trả hàng được Đại lý chấp nhận</div>
+                                    <div class="box-btn ml-auto">
+                                        <a href="" title="" class="btn_sub">Hủy trả hàng</a>
+                                    </div>
+                                    <div class="total ml-auto">Tổng số tiền: <span>216.000.000 đ</span></div>
                                 </div>
                             </div>
                         </div>
