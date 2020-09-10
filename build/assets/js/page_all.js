@@ -25,6 +25,12 @@
     $(this).addClass('active');
   }); //show filter
 
+  $('.toggle-filter').on('click', function () {
+    $('.filter,.modal-filter').addClass('show');
+  });
+  $('.modal-filter').on('click', function () {
+    $('.filter,.modal-filter').removeClass('show');
+  });
   $('.filter__list h5').on('click', function () {
     $(this).parent().toggleClass('active');
   }); // effect navbar
