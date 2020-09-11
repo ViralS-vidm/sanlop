@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Ví voucher</title>
+    <title>Đơn bị hủy</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
@@ -128,12 +128,6 @@
 </header>
 
 <main>
-    <div class="box-breadcrumb">
-        <ul class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Tài khoản</li>
-        </ul>
-    </div>
     <div class="profile container">
         <div class="profile__banner">
             <img src="./assets/img/banner-profile.jpg" alt="">
@@ -175,144 +169,123 @@
 </ul>
             </div>
             <div class="col-lg-9 col-md-9">
-                <div class="box-voucher">
-                    <div class="voucher-form">
-                        <form action="" class="flex-lc">
-                            <h4>Mã Voucher</h4>
-                            <input type="text" placeholder="Nhập mã voucher">
-                            <button type="button" class="btn_ty3">Áp dụng</button>
-                        </form>
-                    </div>
-                    <div class="voucher-list">
-                        <ul class="tab nav">
-                            <li><a href="#voucher1" data-toggle="tab" class="active">Voucher của sàn</a></li>
-                            <li><a href="#voucher2" data-toggle="tab">Voucher shop</a></li>
+                <div class="box-order">
+                    <a href="javascript:;" class="btn_back" onclick="history.go(-1)">Quay lại</a>
+                    <div class="order-process">
+                        <div class="head flex-lc">
+                            <div>Đơn hàng <span>#55966696</span></div>
+                            <div class="status">Đã hủy</div>
+                        </div>
+                        <ul class="process process_cancel flex">
+                            <li class="active">
+                                <div class="box-icon flex-center">
+                                    <i class="icon icon-1"></i>
+                                </div>
+                                <p>Xác nhận <br> đơn hàng</p>
+                            </li>
+                            <li class="active">
+                                <div class="box-icon flex-center">
+                                    <i class="icon icon-2"></i>
+                                </div>
+                                <p>Chờ lấy <br> hàng</p>
+                            </li>
+                            <li class="cancel">
+                                <div class="box-icon flex-center">
+                                    <i class="icon icon-5"></i>
+                                </div>
+                                <p>Đã hủy</p>
+                            </li>
                         </ul>
-                        <div class="tab-content">
-                            <div id="voucher1" class="tab-pane fade show active">
-                                <ul class="tab_sub nav">
-                                    <li><a href="#all" data-toggle="tab" class="active">Tất cả</a></li>
-                                    <li><a href="#notused" data-toggle="tab">Chưa dùng</a></li>
-                                    <li><a href="#used" data-toggle="tab">Đã dùng</a></li>
-                                </ul>
-                                <div class="tab-content">
-                                    <div id="all" class="tab-pane fade show active">
-                                        <div class="voucher flex pr">
-                                            <div class="voucher__code flex-center">
-                                                <span>GHO889662</span>
-                                                <span>Giảm 20%</span>
-                                            </div>
-                                            <div class="voucher__content flex">
-                                                <p>Giảm 70% tối đa 35.000đ vào 11h sáng hàng ngày. Áp dụng 1 số cửa hàng nhất định. HSD 30/08/2020</p>
-                                                <a href="" class="viewmore">Xem chi tiết</a>
-                                            </div>
-                                            <a href="" title="Điều kiện" class="condition">Điều kiện</a>
-                                        </div>
-                                        <div class="voucher flex pr">
-                                            <div class="voucher__code flex-center">
-                                                <span>GHO889662</span>
-                                                <span>Giảm 20%</span>
-                                            </div>
-                                            <div class="voucher__content flex">
-                                                <p>Giảm 70% tối đa 35.000đ vào 11h sáng hàng ngày. Áp dụng 1 số cửa hàng nhất định. HSD 30/08/2020</p>
-                                                <a href="" class="viewmore">Xem chi tiết</a>
-                                            </div>
-                                            <a href="" title="Điều kiện" class="condition">Điều kiện</a>
-                                        </div>
-                                        <div class="voucher flex pr">
-                                            <div class="voucher__code flex-center">
-                                                <span>GHO889662</span>
-                                                <span>Giảm 20%</span>
-                                            </div>
-                                            <div class="voucher__content flex">
-                                                <p>Giảm 70% tối đa 35.000đ vào 11h sáng hàng ngày. Áp dụng 1 số cửa hàng nhất định. HSD 30/08/2020</p>
-                                                <a href="" class="viewmore">Xem chi tiết</a>
-                                            </div>
-                                            <a href="" title="Điều kiện" class="condition">Điều kiện</a>
-                                        </div>
-                                    </div>
-                                    <div id="notused" class="tab-pane fade">
-                                        <div class="voucher flex pr">
-                                            <div class="voucher__code flex-center">
-                                                <span>GHO889662</span>
-                                                <span>Giảm 20%</span>
-                                            </div>
-                                            <div class="voucher__content flex">
-                                                <p>Giảm 70% tối đa 35.000đ vào 11h sáng hàng ngày. Áp dụng 1 số cửa hàng nhất định. HSD 30/08/2020</p>
-                                                <a href="" class="viewmore">Xem chi tiết</a>
-                                            </div>
-                                            <a href="" title="Điều kiện" class="condition">Điều kiện</a>
-                                        </div>
-                                    </div>
-                                    <div id="used" class="tab-pane fade">
-                                        <div class="voucher flex pr">
-                                            <div class="voucher__code flex-center">
-                                                <span>GHO889662</span>
-                                                <span>Giảm 20%</span>
-                                            </div>
-                                            <div class="voucher__content flex">
-                                                <p>Giảm 70% tối đa 35.000đ vào 11h sáng hàng ngày. Áp dụng 1 số cửa hàng nhất định. HSD 30/08/2020</p>
-                                                <a href="" class="viewmore">Xem chi tiết</a>
-                                            </div>
-                                            <a href="" title="Điều kiện" class="condition">Điều kiện</a>
-                                        </div>
-                                    </div>
+                        <div class="box-info flex">
+                            <div class="col-left">
+                                <h4>Người nhận</h4>
+                                <div class="info">
+                                    <strong>Quỳnh Như</strong>
+                                    <p>0964 995 xxxx</p>
+                                    <p>74 doãn kế thiện, Phường Mai Dịch, Quận Cầu Giấy, Hà Nội</p>
                                 </div>
                             </div>
-                            <div id="voucher2" class="tab-pane fade">
-                                <ul class="tab_sub nav">
-                                    <li><a href="#allshop" data-toggle="tab" class="active">Tất cả</a></li>
-                                    <li><a href="#notusedsho" data-toggle="tab">Chưa dùng</a></li>
-                                    <li><a href="#usedusedshop" data-toggle="tab">Đã dùng</a></li>
-                                </ul>
-                                <div class="tab-content">
-                                    <div id="allshop" class="tab-pane fade show active">
-                                        <div class="voucher flex pr">
-                                            <div class="voucher__code flex-center">
-                                                <span>GHO889662</span>
-                                                <span>Giảm 20%</span>
-                                            </div>
-                                            <div class="voucher__content flex">
-                                                <p>Giảm 70% tối đa 35.000đ vào 11h sáng hàng ngày. Áp dụng 1 số cửa hàng nhất định. HSD 30/08/2020</p>
-                                                <a href="" class="viewmore">Xem chi tiết</a>
-                                            </div>
-                                            <a href="" title="Điều kiện" class="condition">Điều kiện</a>
-                                        </div>
-                                    </div>
-                                    <div id="notusedsho" class="tab-pane fade">
-                                        <div class="voucher flex pr">
-                                            <div class="voucher__code flex-center">
-                                                <span>GHO889662</span>
-                                                <span>Giảm 20%</span>
-                                            </div>
-                                            <div class="voucher__content flex">
-                                                <p>Giảm 70% tối đa 35.000đ vào 11h sáng hàng ngày. Áp dụng 1 số cửa hàng nhất định. HSD 30/08/2020</p>
-                                                <a href="" class="viewmore">Xem chi tiết</a>
-                                            </div>
-                                            <a href="" title="Điều kiện" class="condition">Điều kiện</a>
-                                        </div>
-                                    </div>
-                                    <div id="usedshop" class="tab-pane fade">
-                                        <div class="voucher flex pr">
-                                            <div class="voucher__code flex-center">
-                                                <span>GHO889662</span>
-                                                <span>Giảm 20%</span>
-                                            </div>
-                                            <div class="voucher__content flex">
-                                                <p>Giảm 70% tối đa 35.000đ vào 11h sáng hàng ngày. Áp dụng 1 số cửa hàng nhất định. HSD 30/08/2020</p>
-                                                <a href="" class="viewmore">Xem chi tiết</a>
-                                            </div>
-                                            <a href="" title="Điều kiện" class="condition">Điều kiện</a>
-                                        </div>
-                                    </div>
+                            <div class="col-right">
+                                <h4>Lịch sử đơn</h4>
+                                <div class="history">
+                                    <p><time>06:37 23-05-2018</time> Đã hủy</p>
+                                    <p><time>13:41 19-05-2018</time> Thông tin đơn hàng đã gửi tới Người bán</p>
+                                    <p><time>13:41 19-05-2018</time> Đã tạo Đơn hàng</p>
                                 </div>
                             </div>
+                        </div>
+                        <div class="bottom flex-lc">
+                            <div class="txt">
+                                Người bán đã gửi hàng. <br>
+                                Bạn sẽ nhận được sản phẩm dự kiến vào 07-09-2020.
+                            </div>
+                            <a href="" class="btn_buy ml-auto">Mua lại đơn hàng</a>
+                        </div>
+                    </div>
+                    <div class="order">
+                        <div class="order__header flex-lc">
+                            <div class="flex-lc">
+                                <img src="./assets/img/logo-shop.png" class="avt" alt="">
+                                <strong>Maxxis Authentic</strong>
+                                <a href="" class="btn_contact">Liên hệ</a>
+                            </div>
+                            <div class="id ml-auto">ID Đơn hàng <span>#4859215</span></div>
+                        </div>
+                        <div class="order__list">
+                            <div class="item flex-lc">
+                                <div class="product flex">
+                                    <a href="" class="product__thumb"><img src="./assets/img/thumb1.jpg" alt=""></a>
+                                    <div class="product__content">
+                                        <h3><a href="">Lốp Xe 4 chỗ thương hiệu MICHELLI</a></h3>
+                                        <p>Loại: Lốp 11 Inch - Hoa gai A10</p>
+                                    </div>
+                                </div>
+                                <div class="price ml-auto">
+                                    <span>10 x</span>
+                                    1.800.000đ
+                                </div>
+                            </div>
+                            <div class="item flex-lc">
+                                <div class="product flex">
+                                    <a href="" class="product__thumb"><img src="./assets/img/thumb1.jpg" alt=""></a>
+                                    <div class="product__content">
+                                        <h3><a href="">Lốp Xe 4 chỗ thương hiệu MICHELLI</a></h3>
+                                        <p>Loại: Lốp 11 Inch - Hoa gai A10</p>
+                                    </div>
+                                </div>
+                                <div class="price ml-auto">
+                                    <span>10 x</span>
+                                    1.800.000đ
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order__summary">
+                            <div class="flex-between">
+                                <p><i class="icon icon-voucher"></i>Mã giảm giá của shop</p>
+                                <span>D24599 (85.000đ)</span>
+                            </div>
+                            <div class="flex-between">
+                                <p><i class="icon icon-voucher"></i>Mã giảm giá của sàn</p>
+                                <span>D24599 (15.000đ)</span>
+                            </div>
+                            <div class="flex-between">
+                                <p>Đại lý vận chuyển</p>
+                                <span>16.000đ</span>
+                            </div>
+                            <div class="flex-between">
+                                <p>Tổng tiền hàng</p>
+                                <span>16.000đ</span>
+                            </div>
+                        </div>
+                        <div class="order__bottom flex-lc">
+                            <div class="total ml-auto">Tổng số tiền: <span>216.000.000 đ</span></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 </main>
 
 <footer>

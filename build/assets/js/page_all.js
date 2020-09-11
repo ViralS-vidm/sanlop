@@ -23,6 +23,13 @@
   $('.profile__nav li').click(function () {
     $('.profile__nav li').removeClass('active');
     $(this).addClass('active');
+  }); //show notifi
+
+  $('.notifi').on('click', function () {
+    $('.notified').addClass('show');
+  });
+  $('.notified .close').on('click', function () {
+    $('.notified').removeClass('show');
   }); //show filter
 
   $('.toggle-filter').on('click', function () {
@@ -46,10 +53,10 @@
     $(this).parent().addClass('show');
   });
   $(document).mouseup(function (e) {
-    var container = $(".dropdown-content");
+    var container = $(".dropdown-content,.notified");
 
     if (!container.is(e.target) && container.has(e.target).length === 0) {
-      $('.dropdown').removeClass('show');
+      $('.dropdown,.notified').removeClass('show');
     }
   });
   $('.form-group input').on('focus', function () {
