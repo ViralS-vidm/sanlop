@@ -43,6 +43,31 @@
                 }
             ]
         });
+        $('.product_selling_list').slick({
+            centerMode: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            centerPadding: 0,
+            autoplay: false,
+            dots: false,
+            rows: 1,
+            arrows: true,
+            responsive: [
+                {
+                    breakpoint: 760,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                }
+            ]
+        });
         $('.list_img').slick({
             centerMode: false,
             slidesToShow: 5,
