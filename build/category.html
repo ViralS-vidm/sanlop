@@ -15,7 +15,7 @@
         <div class="container">
             <div class="box-link flex">
                 <a href="" title="">KÊNH NGƯỜI BÁN</a>
-                <a href="" title="">Tải ứng dụng</a>
+                <a href="#download" title="">Tải ứng dụng</a>
                 <a href="" title="">Kết nối Facebook</a>
                 <div class="box-notifi ml-auto pr">
                     <a href="javascript:;" class="notifi flex-center flex-nowrap"><i class="icon icon-notifi"></i>Thông báo</a>
@@ -54,7 +54,7 @@
             <form action="" class="search pr">
                 <input type="text" placeholder="Tìm kiếm từ khóa" required>
                 <button type="button" class="btn_search"></button>
-                <p>Gợi ý tìm kiếm: <span>Lốp Genius</span>, <span>GrightStone</span>. <span>Turanza</span>..</p>
+                <p>Gợi ý tìm kiếm: <a href="javascript:;">Lốp Genius</a>, <a href="javascript:;">GrightStone</a>. <a href="javascript:;">Turanza</a>..</p>
             </form>
             <div class="dropdown favourite">
                 <button class="btn dropdown-toggle" type="button">
@@ -270,9 +270,8 @@
                                 <div class="price flex-lc">
                                     <span>Từ</span>
                                     <select name="">
-                                        <option>0</option>
-                                        <option>5.000.000</option>
-                                        <option>10.000.000</option>
+                                        <option>Thấp</option>
+                                        <option>Cao</option>
                                     </select>
                                     <span>đ</span>
                                 </div>
@@ -280,9 +279,8 @@
                                 <div class="price flex-lc">
                                     <span>Đến</span>
                                     <select name="">
-                                        <option>0</option>
-                                        <option>15.000.000</option>
-                                        <option>200.000.000</option>
+                                        <option>Thấp</option>
+                                        <option>Cao</option>
                                     </select>
                                     <span>đ</span>
                                 </div>
@@ -373,8 +371,8 @@
                                     <button type="button" class="btn_sort">Bán chạy</button>
                                     <select name="">
                                         <option>Giá</option>
-                                        <option>Thấp đến Cao</option>
-                                        <option>Cao đến Thấp</option>
+                                        <option>Sắp xếp từ Cao đến Thấp</option>
+                                        <option>Sắp xếp từ Thấp đến Cao</option>
                                     </select>
                                 </div>
                                 <div class="nav flex-lc ml-auto">
@@ -398,6 +396,7 @@
                                         <span>Đã bán 25</span>
                                     </div>
                                     <div class="price flex-lc">đ <span class="price__new">399.000</span>  <span class="price__old">599.000</span></div>
+                                    <div class="address">Hà nội</div>
                                 </div>
                             </div>
                         </div>
@@ -411,6 +410,7 @@
                                         <span>Đã bán 25</span>
                                     </div>
                                     <div class="price flex-lc">đ <span class="price__new">399.000</span>  <span class="price__old">599.000</span></div>
+                                    <div class="address">Hưng yên</div>
                                 </div>
                             </div>
                         </div>
@@ -424,6 +424,7 @@
                                         <span>Đã bán 25</span>
                                     </div>
                                     <div class="price flex-lc">đ <span class="price__new">399.000</span>  <span class="price__old">599.000</span></div>
+                                    <div class="address">Hải phòng</div>
                                 </div>
                             </div>
                         </div>
@@ -520,7 +521,7 @@
                     <a href="" title="" class="paypal">paypal</a>
                 </div>
                 <h4 class="mb-0">TẢi ứng dụng miễn phí</h4>
-                <div class="download flex">
+                <div id="download" class="download flex">
                     <div class="qrcode mr-4"><img src="./assets/img/qrcode.jpg" alt=""></div>
                     <div class="download_mobile">
                         <a href=""><i class="icon icon-ios"></i>App Store</a>

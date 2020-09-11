@@ -6,6 +6,9 @@ body{
   line-height: 1.4;
   &.pr-detail{background: #fff;}
 }
+html,body{
+  scroll-behavior: smooth;
+}
 header{
   &.bg-white{
     padding: 25px 0;
@@ -152,7 +155,8 @@ header{
     }
     input:focus{outline: none;}
     p{display: block; margin: 11px 0 0; font-size: 14px; line-height: 16px; color: #f2f2f4;}
-    p span{border-bottom: 1px solid;}
+    p span,p a{border-bottom: 1px solid; color: #f2f2f4;}
+    a:hover{color: #fff;}
   }
   .btn_search{
     width: 22px; height: 22px;
@@ -286,14 +290,6 @@ header{
 }
 .search_related{
   h2{margin-right: 114px;}
-  h2::after{
-    content: "";
-    width: 7px; height: 13px;
-    display: inline-block;
-    margin-left: 10px;
-    background: url("#{$img-path}/icon-arr.png") no-repeat;
-
-  }
 }
 .product{
   transition: all .25s ease;
@@ -301,7 +297,7 @@ header{
     display: block; position: relative; padding-bottom: 100%;
     img{width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;}
   }
-  &__detail{padding: 7px 9px; background: #fff;}
+  &__detail{padding: 7px 9px; background: #fff; position: relative;}
   h3{
     min-height: 48px; font-size: 15px; line-height: 24px;
     display: -webkit-box;
@@ -340,6 +336,7 @@ header{
     margin: 6px 0 15px;
     span{margin-left: 7px; font-size: 13px; color: #999; line-height: 1;}
   }
+  .address{font-size: 13px; color: #999; text-transform: capitalize; position: absolute; right: 15px; bottom: 17px;}
 }
 .trend{
   .header{padding: 25px 20px; background: #fff;}
@@ -431,7 +428,7 @@ header{
     background: #f6f7f8;
     margin-top: 18px;
     padding: 11px 19px;
-    p{width: 100%; margin-top: 5px;}
+    .txt{width: 100%; margin-top: 5px;}
     &__new{
       color: #ee2c3c; font-size: 12px;
       span{font-size: 20px; font-weight: 600;}
@@ -442,6 +439,7 @@ header{
       margin-bottom: 5px;
       margin-left: 9px; font-size: 14px; font-weight: 600; color: #666666; text-decoration: line-through;
     }
+    .space{font-weight: 500; margin: 0 5px;}
   }
   .transport{
     margin-top: 20px;
@@ -458,6 +456,8 @@ header{
       p{margin-bottom: 10px;}
       span{margin-left: 18px;}
     }
+    select{border: none;}
+    select:focus{outline: none;}
   }
   .type{
     margin-top: 25px;
@@ -1317,6 +1317,14 @@ header{
   }
   input{border: none; width: 80%; height: 30px; background: transparent; font-size: 16px; font-weight: 600; position: relative; z-index: 2;}
   input::placeholder{color: #999;}
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
   .phone{width: 60%;}
   .btn_send_otp{
     color: #f57d20;
@@ -1325,7 +1333,7 @@ header{
   }
   .btn_register,.btn_login{font-size: 16px; margin-right: 22px;}
   .btn_submit{width: 170px; height: 50px;}
-  .btn_back{margin-right: 25px;}
+  .btn_back{margin-right: 35px;}
   .rule{
     p{margin: 5px 0; color: #666; display: flex; align-items: center;}
     p::before{
@@ -1426,10 +1434,10 @@ header{
       height: 36px;
       border-radius: 4px;
       border: solid 1px #d9d9d9;
-      color: #999;
+      color: #111;
     }
     input[type="file"]{border: none; width: auto; height: auto; padding: 0;}
-    .username{border: none; color: #111;}
+    .username{color: #111;}
     .img-avatar{width: 60px; margin: 10px 0;}
     .img-cover{
       max-width: 350px;
@@ -1442,6 +1450,7 @@ header{
       border-top: 1px solid #e4e4e4;
       button{padding: 6px 20px; margin-right: 10px;}
     }
+    .note{color: #999; font-size: 12px; padding-left: 160px;}
   }
   .checkbox{
     width: auto;
@@ -1616,8 +1625,9 @@ header{
 .modal_voucher{
   .modal-header h4{font-size: 24px;}
   .checkbox{position: absolute; top: 50%; right: 10px; transform: translateY(-50%);}
-  .voucher_list{
+  .voucher__list{
     max-height: 220px; padding-right: 5px; overflow: auto;
+    >*+*{margin-top: 10px;}
     &::-webkit-scrollbar{width: 5px;}
     &::-webkit-scrollbar-track{background: #e4e4e4;}
     &::-webkit-scrollbar-thumb{background: #666;}
@@ -1717,7 +1727,7 @@ header{
   .redu_amount{border-radius: 3px 0 0 3px;}
   .add_amount{border-radius: 0 3px 3px 0;}
   input{
-    width: 40px; height: 30px; padding-left: 10px;
+    width: 45px; height: 30px; padding-left: 10px;
     font-size: 14px; text-align: center;
     border: 1px solid #e4e4e4;
     border-left: none; border-right: none;
@@ -2131,6 +2141,9 @@ button{
   .profile{
     &__banner{margin: 20px 0;}
     &__info{margin-bottom: 10px;}
+    &__detail{
+      .note{padding-left: 0;}
+    }
   }
   .bank_acount{
     .account{

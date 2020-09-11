@@ -18,7 +18,7 @@
                 <div class="profile__detail">
                     <form action="">
                         <div class="form-group">
-                            <label>Tên đăng nhập</label>
+                            <label>Họ và tên</label>
                             <input type="text" class="username" name="" value="Jusstires_01" readonly>
                         </div>
                         <div class="form-group">
@@ -56,17 +56,30 @@
                             <label>Ảnh đại diện</label>
                             <input type="file" name="" value="Tải lên">
                             <div class="img-wrapper img-avatar"><img src="./assets/img/logo-shop.png" alt=""></div>
+                            <div class="note">Chú ý: Dung lượng ảnh tối đa 1MB. Định dạng: .JPEG, .PNG</div>
                         </div>
                         <div class="form-group">
                             <label>Ảnh bìa</label>
                             <input type="file" name="" value="Tải lên">
                             <div class="img-wrapper img-cover"><img src="./assets/img/banner-profile.jpg" alt=""></div>
+                            <div class="note">Chú ý: Dung lượng ảnh tối đa 1MB. Định dạng: .JPEG, .PNG</div>
                         </div>
                         <div class="form-action flex">
                             <button type="button" class="btn_ty4">Hủy</button>
-                            <button type="button" class="btn_ty3">Lưu thông tin</button>
+                            <button type="button" class="btn_ty3" data-toggle="modal" data-target="#modal_notifi">Lưu thông tin</button>
                         </div>
                     </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal_notifi" id="modal_notifi">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <a href="javascript" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></a>
+                <div class="notifi">
+                    <img src="./assets/img/icon-phone.png" alt="">
+                    <p>Cập nhật hồ sơ thành công</p>
                 </div>
             </div>
         </div>

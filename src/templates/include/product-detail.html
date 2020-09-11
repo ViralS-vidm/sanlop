@@ -63,7 +63,7 @@
                         <li><a href="" title="" class="share__in">instagram</a></li>
                     </ul>
                     <div class="like flex-center ml-auto">
-                        <i class="icon icon-like"></i>
+                        <a href=""><i class="icon icon-like"></i></a>
                         23 đã thích
                     </div>
                 </div>
@@ -83,9 +83,9 @@
                         <p>SKU: 3356786567310</p>
                     </div>
                     <div class="price flex">
-                        <div class="price__new">đ <span>4.950.000 - 8.120.000</span></div>
-                        <div class="price__old">4.950.000 - 10.590.000</div>
-                        <p>Giá bán sỉ từ >10sp trở lên  </p>
+                        <div class="price__new flex-lc"><p>đ <span>4.950.000</span></p> <span class="space">-</span> <p>đ <span>8.120.000</span></p></div>
+                        <div class="price__old flex-lc"><p>đ <span>4.950.000</span></p> <span class="space">-</span> <p>đ <span>10.590.000</span></p></div>
+                        <div class="txt">Giá bán sỉ từ >10sp trở lên  </div>
                     </div>
                     <div class="transport">
                         <div class="transport__head flex-lc">
@@ -94,8 +94,19 @@
                             <span class="transport__type">Miễn phí vận chuyển</span>
                         </div>
                         <div class="transport__detail">
-                            <p>Vận chuyển tới: <span>Quận Nam Từ Liêm, Hà Nội</span></p>
-                            <p>Phí vận chuyển: <span>đ 15.000 - đ 26.000</span></p>
+                            <p>Vận chuyển tới:
+                                <select name="">
+                                    <option>Quận Nam Từ Liêm, Hà Nội</option>
+                                    <option>Hà Nam</option>
+                                </select>
+                            </p>
+                            <p>
+                                Phí vận chuyển:
+                                <select name="">
+                                    <option>đ 15.000 - đ 26.000</option>
+                                    <option>đ 25.000 - đ 56.000</option>
+                                </select>
+                            </p>
                         </div>
                     </div>
                     <div class="type flex-lc">
@@ -164,14 +175,14 @@
                         <h4>Số lượng</h4>
                         <div class="amount_inner flex">
                             <a href="javascript:void(0)" class="redu_amount">-</a>
-                            <input type="number" value="1" readonly>
+                            <input type="number" value="1">
                             <a href="javascript:void(0)" class="add_amount">+</a>
                             <p>131 sản phẩm có sẵn</p>
                         </div>
                     </div>
                     <div class="box-btn flex">
-                        <a href="" class="btn_addcart flex-center"><i class="icon icon-cart"></i> Thêm vào giỏ</a>
-                        <a href="" class="btn_buy flex-center">Mua ngay</a>
+                        <a href="javascript:;" class="btn_addcart flex-center" data-target="#modal_notifi" data-toggle="modal"><i class="icon icon-cart"></i> Thêm vào giỏ</a>
+                        <a href="https://thuclfc.gitlab.io/bonbon/build/thanh-toan.html" class="btn_buy flex-center">Mua ngay</a>
                     </div>
                 </div>
             </div>
@@ -359,6 +370,17 @@
                         <h3><a href="">Lốp xe Brightstone Turanza T005A</a></h3>
                         <span>1.180.000đ</span>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal_notifi" id="modal_notifi">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <a href="javascript" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></a>
+                <div class="notifi">
+                    <img src="./assets/img/icon-addcart.png" alt="">
+                    <p style="color: #f57c00">Đã thêm sản phẩm vào giỏ hàng</p>
                 </div>
             </div>
         </div>

@@ -168,6 +168,10 @@ body.pr-detail {
   background: #fff;
 }
 
+html, body {
+  scroll-behavior: smooth;
+}
+
 header.bg-white {
   padding: 25px 0;
   background: #fff;
@@ -586,8 +590,13 @@ header .btn_remove:hover {
   color: #f2f2f4;
 }
 
-.btHeader .search p span {
+.btHeader .search p span, .btHeader .search p a {
   border-bottom: 1px solid;
+  color: #f2f2f4;
+}
+
+.btHeader .search a:hover {
+  color: #fff;
 }
 
 .btHeader .btn_search {
@@ -991,15 +1000,6 @@ header .btn_remove:hover {
   margin-right: 114px;
 }
 
-.search_related h2::after {
-  content: "";
-  width: 7px;
-  height: 13px;
-  display: inline-block;
-  margin-left: 10px;
-  background: url("../img/icon-arr.png") no-repeat;
-}
-
 .product {
   -webkit-transition: all .25s ease;
   -o-transition: all .25s ease;
@@ -1026,6 +1026,7 @@ header .btn_remove:hover {
 .product__detail {
   padding: 7px 9px;
   background: #fff;
+  position: relative;
 }
 
 .product h3 {
@@ -1114,6 +1115,15 @@ header .btn_remove:hover {
   font-size: 13px;
   color: #999;
   line-height: 1;
+}
+
+.product .address {
+  font-size: 13px;
+  color: #999;
+  text-transform: capitalize;
+  position: absolute;
+  right: 15px;
+  bottom: 17px;
 }
 
 .trend .header {
@@ -1393,7 +1403,7 @@ header .btn_remove:hover {
   padding: 11px 19px;
 }
 
-.product_info .price p {
+.product_info .price .txt {
   width: 100%;
   margin-top: 5px;
 }
@@ -1427,6 +1437,11 @@ header .btn_remove:hover {
   text-decoration: line-through;
 }
 
+.product_info .price .space {
+  font-weight: 500;
+  margin: 0 5px;
+}
+
 .product_info .transport {
   margin-top: 20px;
 }
@@ -1457,6 +1472,14 @@ header .btn_remove:hover {
 
 .product_info .transport__detail span {
   margin-left: 18px;
+}
+
+.product_info .transport select {
+  border: none;
+}
+
+.product_info .transport select:focus {
+  outline: none;
 }
 
 .product_info .type {
@@ -3776,6 +3799,18 @@ header .btn_remove:hover {
   color: #999;
 }
 
+.login input[type=number], .register input[type=number], .modal_password input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.login input::-webkit-outer-spin-button,
+.login input::-webkit-inner-spin-button, .register input::-webkit-outer-spin-button,
+.register input::-webkit-inner-spin-button, .modal_password input::-webkit-outer-spin-button,
+.modal_password input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .login .phone, .register .phone, .modal_password .phone {
   width: 60%;
 }
@@ -3804,7 +3839,7 @@ header .btn_remove:hover {
 }
 
 .login .btn_back, .register .btn_back, .modal_password .btn_back {
-  margin-right: 25px;
+  margin-right: 35px;
 }
 
 .login .rule p, .register .rule p, .modal_password .rule p {
@@ -4143,7 +4178,7 @@ header .btn_remove:hover {
      -moz-border-radius: 4px;
           border-radius: 4px;
   border: solid 1px #d9d9d9;
-  color: #999;
+  color: #111;
 }
 
 .profile__detail input[type="file"] {
@@ -4154,7 +4189,6 @@ header .btn_remove:hover {
 }
 
 .profile__detail .username {
-  border: none;
   color: #111;
 }
 
@@ -4185,6 +4219,12 @@ header .btn_remove:hover {
 .profile__detail .form-action button {
   padding: 6px 20px;
   margin-right: 10px;
+}
+
+.profile__detail .note {
+  color: #999;
+  font-size: 12px;
+  padding-left: 160px;
 }
 
 .profile .checkbox {
@@ -4615,21 +4655,25 @@ header .btn_remove:hover {
           transform: translateY(-50%);
 }
 
-.modal_voucher .voucher_list {
+.modal_voucher .voucher__list {
   max-height: 220px;
   padding-right: 5px;
   overflow: auto;
 }
 
-.modal_voucher .voucher_list::-webkit-scrollbar {
+.modal_voucher .voucher__list > * + * {
+  margin-top: 10px;
+}
+
+.modal_voucher .voucher__list::-webkit-scrollbar {
   width: 5px;
 }
 
-.modal_voucher .voucher_list::-webkit-scrollbar-track {
+.modal_voucher .voucher__list::-webkit-scrollbar-track {
   background: #e4e4e4;
 }
 
-.modal_voucher .voucher_list::-webkit-scrollbar-thumb {
+.modal_voucher .voucher__list::-webkit-scrollbar-thumb {
   background: #666;
 }
 
@@ -4919,7 +4963,7 @@ header .btn_remove:hover {
 }
 
 .amount input {
-  width: 40px;
+  width: 45px;
   height: 30px;
   padding-left: 10px;
   font-size: 14px;
@@ -5836,6 +5880,9 @@ button:focus {
   }
   .profile__info {
     margin-bottom: 10px;
+  }
+  .profile__detail .note {
+    padding-left: 0;
   }
   .bank_acount .account__img {
     width: 50px;
