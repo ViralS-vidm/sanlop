@@ -30,6 +30,13 @@
   });
   $('.notified .close').on('click', function () {
     $('.notified').removeClass('show');
+  }); //show more article
+
+  $('.btn_viewfull').on('click', function () {
+    $('.info_detail article').addClass('show');
+  });
+  $('.btn_collapse').on('click', function () {
+    $('.info_detail article').removeClass('show');
   }); //show filter
 
   $('.toggle-filter').on('click', function () {
