@@ -1033,6 +1033,9 @@ header .btn_remove:hover {
   min-height: 48px;
   font-size: 15px;
   line-height: 24px;
+}
+
+.product h3 a {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -5645,11 +5648,12 @@ button:focus {
     left: -10px;
   }
   .discount__item {
-    max-width: 95%;
-    padding: 10px;
+    max-width: 98%;
+    padding: 10px 15px;
   }
   .discount__item .btn_saved, .discount__item .btn_save {
     height: 26px;
+    white-space: nowrap;
     bottom: 10px;
     right: 10px;
     top: initial;
