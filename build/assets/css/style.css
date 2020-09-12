@@ -5529,10 +5529,13 @@ h5, h4 {
 }
 
 input {
-  outline: none;
-  -webkit-background-clip: padding-box !important;
-     -moz-background-clip: padding-box !important;
-          background-clip: padding-box !important;
+  -webkit-appearance: none;
+}
+
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .pr {

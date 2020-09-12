@@ -1936,6 +1936,7 @@ h5,h4{font-size: 14px;}
   &:hover{color: #111; background: #c8c8c8;}
 }
 input{-webkit-appearance: none;}
+select{appearance: none;}
 .pr{position: relative;}
 .container{max-width: 1200px;}
 .icon{display: inline-block; background: url("#{$img-path}/icons.png") no-repeat 0 0;}
