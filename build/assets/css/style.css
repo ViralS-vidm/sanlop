@@ -5528,6 +5528,10 @@ h5, h4 {
   background: #c8c8c8;
 }
 
+input {
+  outline: none;
+}
+
 .pr {
   position: relative;
 }
