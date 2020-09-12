@@ -1935,7 +1935,7 @@ h5,h4{font-size: 14px;}
   background: #e4e4e4;
   &:hover{color: #111; background: #c8c8c8;}
 }
-input{outline: none; background-clip: padding-box !important}
+input{-webkit-appearance: none;}
 .pr{position: relative;}
 .container{max-width: 1200px;}
 .icon{display: inline-block; background: url("#{$img-path}/icons.png") no-repeat 0 0;}
