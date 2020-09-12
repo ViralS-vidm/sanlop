@@ -456,7 +456,7 @@ header{
       p{margin-bottom: 10px;}
       span{margin-left: 18px;}
     }
-    select{border: none; background: none;}
+    select{border: none;}
     select:focus{outline: none;}
   }
   .type{
@@ -828,7 +828,7 @@ header{
       width: 28px; height: 26px; background-position: 0 -164px;}
     span{display: block; font-weight: 600;}
     .space{height: 50px; width: 1px; margin: 0 25px; background: #d9d9d9;}
-    select{border: none; background: none;}
+    select{border: none;}
     select:focus{outline: none;}
   }
   &__head{
@@ -1939,6 +1939,8 @@ input{-webkit-appearance: none;}
 select{
   appearance: none;
   position: relative;
+  padding-right: 30px;
+  background: url("#{$img-path}/icon-arr3.png") no-repeat right center;
   &:focus{outline: none;}
 }
 .pr{position: relative;}

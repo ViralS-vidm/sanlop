@@ -1477,7 +1477,6 @@ header .btn_remove:hover {
 
 .product_info .transport select {
   border: none;
-  background: none;
 }
 
 .product_info .transport select:focus {
@@ -2480,7 +2479,6 @@ header .btn_remove:hover {
 
 .cart__header select, .favourite__header select {
   border: none;
-  background: none;
 }
 
 .cart__header select:focus, .favourite__header select:focus {
@@ -5537,6 +5535,8 @@ select {
      -moz-appearance: none;
           appearance: none;
   position: relative;
+  padding-right: 30px;
+  background: url("../img/icon-arr3.png") no-repeat right center;
 }
 
 select:focus {
