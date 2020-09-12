@@ -1471,10 +1471,16 @@ header{
     }
     input[type="file"]{border: none; width: auto; height: auto; padding: 0;}
     .username{color: #111;}
-    .img-avatar{width: 60px; margin: 10px 0;}
+    .img-avatar{
+      width: 60px; height: 60px; border-radius: 50%; margin: 10px 20px; overflow: hidden;
+      .cancel{top: 15px; right: 5px;}
+    }
     .img-cover{
       max-width: 350px;
-      height: 60px; margin: 10px 0;
+      height: 60px; margin: 10px 20px; overflow: hidden;
+    }
+    .img{
+      height: 100%;
       img{width: 100%; height: 100%; object-fit: cover;}
     }
     .form-action{
@@ -1483,7 +1489,8 @@ header{
       border-top: 1px solid #e4e4e4;
       button{padding: 6px 20px; margin-right: 10px;}
     }
-    .note{color: #999; font-size: 12px; padding-left: 160px;}
+    .note{width: 100%; margin-top: 5px; color: #999; font-size: 12px; padding-left: 160px;}
+    .cancel{font-size: 11px; padding: 0 2px;background: #c00; position: absolute; right: 0; top: 0; color: #fff;}
   }
   .checkbox{
     width: auto;
@@ -1516,6 +1523,15 @@ header{
       background: #e4e4e4 url("#{$img-path}/icon-s1.png") no-repeat 15px center;
       color: #999; border: none;
 
+    }
+  }
+  .box-upload{
+    input{opacity: 0; position: absolute; width: 100%; height: 100%; left: 0; top: 0;}
+    span{
+      padding: 6px 18px;
+      border-radius: 4px;
+      border: solid 1px #d9d9d9;
+      background-color: #f2f2f4;
     }
   }
 }
@@ -1607,7 +1623,76 @@ header{
     a{width: 100%; height: 40px; border-radius: 0;}
   }
 }
-//
+
+//support
+.support{
+  width: 100%; min-height: 1180px;
+  margin-bottom: -68px; padding: 60px 0;
+  background: url("#{$img-path}/bg-sp.jpg") repeat;
+  article{
+    padding: 15px;
+    background: #f2f2f4;
+  }
+  &__nav{
+    >*+*{margin-top: 8px;}
+    a{
+      display: flex;
+      align-items: center; justify-content: center;
+      padding: 0 5px;
+      text-align: center;
+      border-radius: 4px;
+      height: 40px;
+      border: solid 1px #fff;
+      color: #fff;
+    }
+    a.active{background: #fff; color: #111;}
+    a:hover{color: #fff; background: #f2a26a;}
+    li:last-child{
+      &::before{
+        content: "";
+        width: 1px; height: 60px; background: #fff;
+        display: block; margin: 15px auto 20px;
+      }
+    }
+  }
+  &__content{
+    background: #fff; padding: 60px;
+    border-radius: 4px 4px 0 0;
+    box-shadow: 0px 1px 30px 0 rgba(51, 51, 51, 0.2);
+    h2{font-size: 28px; margin-bottom: 40px;}
+    h4{font-size: 16px; font-weight: 700;}
+  }
+  &__bottom{
+    padding: 30px 60px;
+    background: #fff;
+    box-shadow: 0px 1px 30px 0 rgba(51, 51, 51, 0.2);
+    border-radius: 0 0 4px 4px;
+    h4{margin-bottom: 15px; font-size: 16px; font-weight: 700;}
+    p{margin-bottom: 15px;}
+    p:last-child{margin-bottom: 0;}
+    .icon{margin-right: 13px;}
+  }
+  .faq{
+    li{padding: 20px 0 0; border-bottom: 1px solid #f2f2f4;}
+    h5{
+      display: flex; align-items: center; margin-bottom: 20px; font-size: 16px;
+      &::after{
+        content: "";
+        width: 12px; height: 8px; display: block;
+        margin-left: 5px;
+        background: url("#{$img-path}/icons.png") no-repeat -1px -297px;
+      }
+    }
+    .active{
+      border-bottom: none;
+      h5{color: #f57d20;}
+      h5::after{background: url("#{$img-path}/icons.png") no-repeat -2px -306px;}
+      article{display: block;}
+    }
+  }
+  .icon-email{width: 26px; height: 19px; background-position: -1px -274px;}
+  .icon-phone{width: 26px; height: 23px; background-position: -1px -249px;}
+}
 
 //modal
 .modal-filter{
@@ -2098,10 +2183,14 @@ button{
       div{max-width: 100%; flex-wrap: nowrap;}
     }
   }
+  .support{
+    &__content{padding: 15px 15px 40px;}
+    &__bottom{padding: 15px;}
+  }
 }
 @media(max-width: 760px) {
   header{
-    &.bg-white .txt{font-size: 18px;}
+    &.bg-white .txt{margin-top: 5px; font-size: 18px;}
     .notified{
       width: 90%; right: 10px;
       box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.15);
@@ -2195,6 +2284,7 @@ button{
     &__info{margin-bottom: 10px;}
     &__detail{
       .note{padding-left: 0;}
+      label{width: 100px;}
     }
   }
   .bank_acount{
@@ -2422,6 +2512,9 @@ button{
     }
     .col-left,.col-right{width: 100%;}
   }
+  .support{
+    &__content{margin-top: 30px;}
+  }
 
   //modal
   .box-voucher,.modal_voucher{
@@ -2471,6 +2564,9 @@ button{
 
 @media(max-width: 360px) {
   header{
+    &.bg-white{
+      .txt{font-size: 14px;}
+    }
     .dropdown{
       .dropdown-content{width: 310px;}
     }
