@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="./assets/css/style.css" rel="stylesheet">
+    <link href="./assets/css/style.css?v=1" rel="stylesheet">
 </head>
 <body class="">
 <header>
@@ -319,74 +319,7 @@
 <script src="./assets/js/page_all.js"></script>
 <script>
     $(document).ready(function () {
-        $("#upload_avatar").on('change', function () {
 
-            //Get count of selected files
-            var countFiles = $(this)[0].files.length;
-            var imgPath = $(this)[0].value;
-            var extn = imgPath.substring(imgPath.lastIndexOf('.') + 1).toLowerCase();
-            var image_holder = $("#image-holder-avatar");
-
-            if (extn == "gif" || extn == "png" || extn == "jpg" || extn == "jpeg") {
-                if (typeof (FileReader) != "undefined") {
-
-                    //loop for each file selected for uploaded.
-                    for (var i = 0; i < countFiles; i++) {
-                        var reader = new FileReader();
-                        reader.onload = function (e) {
-                            var html_img = "";
-                            html_img += '<div class="img">',
-                                html_img += '<img src="'+e.target.result+'" />',
-                                html_img += '<a href="javascript:void(0)" class="cancel" onclick="$(this).parent().remove();">X</a>',
-                                html_img += '</div>';
-                            $(image_holder).html('');
-                            $(html_img).appendTo(image_holder);
-                        }
-                        image_holder.show();
-                        reader.readAsDataURL($(this)[0].files[i]);
-                    }
-                } else {
-                    alert("This browser does not support FileReader.");
-                }
-            } else {
-                alert("Pls select only images");
-            }
-
-        });
-        $("#upload_cover").on('change', function () {
-
-            //Get count of selected files
-            var countFiles = $(this)[0].files.length;
-            var imgPath = $(this)[0].value;
-            var extn = imgPath.substring(imgPath.lastIndexOf('.') + 1).toLowerCase();
-            var image_holder = $("#image-holder-cover");
-
-            if (extn == "gif" || extn == "png" || extn == "jpg" || extn == "jpeg") {
-                if (typeof (FileReader) != "undefined") {
-
-                    //loop for each file selected for uploaded.
-                    for (var i = 0; i < countFiles; i++) {
-                        var reader = new FileReader();
-                        reader.onload = function (e) {
-                            var html_img = "";
-                            html_img += '<div class="img">',
-                                html_img += '<img src="'+e.target.result+'" />',
-                                html_img += '<a href="javascript:void(0)" class="cancel" onclick="$(this).parent().remove();">X</a>',
-                                html_img += '</div>';
-                            $(image_holder).html('');
-                            $(html_img).appendTo(image_holder);
-                        }
-                        image_holder.show();
-                        reader.readAsDataURL($(this)[0].files[i]);
-                    }
-                } else {
-                    alert("This browser does not support FileReader.");
-                }
-            } else {
-                alert("Pls select only images");
-            }
-
-        });
     });
 </script>
 </body>
