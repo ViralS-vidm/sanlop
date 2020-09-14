@@ -2212,7 +2212,7 @@ header .btn_remove:hover {
   margin-top: 12px;
 }
 
-.filter__item--brand input, .filter__item--size input {
+.filter__item--brand input[type="text"], .filter__item--size input[type="text"] {
   width: 100%;
   height: 35px;
   padding: 0 10px 0 36px;
@@ -2415,10 +2415,6 @@ header .btn_remove:hover {
   height: 250px;
 }
 
-.sort {
-  margin: 5px 0;
-}
-
 .sort h5 {
   margin: 0 35px 0 0;
 }
@@ -2431,8 +2427,8 @@ header .btn_remove:hover {
 }
 
 .sort .btn_sort {
-  margin-right: 10px;
   padding: 8px 20px;
+  margin: 5px;
 }
 
 .sort .btn_sort.active {
@@ -2811,7 +2807,7 @@ header .btn_remove:hover {
      -moz-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 17px 20px;
+  padding: 17px 40px;
   border-top: 1px solid #e4e4e4;
   border-bottom: 1px solid #e4e4e4;
 }
@@ -2837,7 +2833,7 @@ header .btn_remove:hover {
 }
 
 .paycart .transport {
-  padding: 15px 20px;
+  padding: 15px 40px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
      -moz-box-pack: justify;
@@ -2897,7 +2893,7 @@ header .btn_remove:hover {
      -moz-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 14px;
+  padding: 14px 40px;
   border-top: 1px solid #e4e4e4;
   font-weight: 700;
 }
@@ -5587,7 +5583,7 @@ h5, h4 {
   background: #c8c8c8;
 }
 
-input {
+input[type="text"], input[type="password"] {
   -webkit-appearance: none;
 }
 
@@ -5834,6 +5830,9 @@ button:focus {
   .trend .item {
     padding: 15px;
   }
+  .product .price__old {
+    margin-left: 15px;
+  }
   .product_like .product {
     padding: 10px;
   }
@@ -5886,7 +5885,17 @@ button:focus {
     width: 10%;
   }
   .paycart .cl-4 {
-    width: 10%;
+    width: 15%;
+    text-align: right;
+  }
+  .paycart__bottom .voucher {
+    padding: 17px 14px;
+  }
+  .paycart .transport {
+    padding: 15px 14px;
+  }
+  .paycart .total_pay {
+    padding: 14px 14px;
   }
   .login .intro, .login form, .register .intro, .register form {
     max-width: 50%;
@@ -6727,6 +6736,7 @@ button:focus {
   }
   .product_detail .list_img img {
     height: auto;
+    border-width: 1px;
   }
   .product_detail .imglarge-product {
     margin-left: 0;

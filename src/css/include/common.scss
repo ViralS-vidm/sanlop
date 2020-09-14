@@ -730,7 +730,7 @@ header{
     &--brand,&--size{
       form{padding-right: 4px;}
       label{margin-top: 12px;}
-      input{
+      input[type="text"]{
         width: 100%; height: 35px;
         padding: 0 10px 0 36px; border-radius: 4px; border: solid 1px #d1d1d1;
         background: url("#{$img-path}/icon-s.png") no-repeat 10px center;
@@ -810,12 +810,11 @@ header{
   height: 250px;
 }
 .sort{
-  margin: 5px 0;
   h5{margin: 0 35px 0 0;}
   .btn_sort,select{border-radius: 4px; background-color: #f2f2f4;}
   .btn_sort{
-    margin-right: 10px;
     padding: 8px 20px;
+    margin: 5px;
     &.active{background: #f57d20; color: #fff;}
   }
   select{padding: 0 30px 0 15px; border: none; height: 34px;}
@@ -956,7 +955,7 @@ header{
     background: #fff;
     .voucher{
       justify-content: flex-end;
-      padding: 17px 20px;
+      padding: 17px 40px;
       border-top: 1px solid #e4e4e4; border-bottom: 1px solid #e4e4e4;
       p{width: 100%; max-width: 400px;}
     }
@@ -965,7 +964,7 @@ header{
   .total{font-weight: 600;}
   .product h3{min-height: auto; margin-bottom: 2px;}
   .transport{
-    padding: 15px 20px;
+    padding: 15px 40px;
     justify-content: space-between;
     > div{margin: 5px 0;}
     h5{margin-bottom: 10px; white-space: nowrap;}
@@ -989,7 +988,7 @@ header{
   }
   .total_pay{
     justify-content: flex-end;
-    padding: 14px;
+    padding: 14px 40px;
     border-top: 1px solid #e4e4e4;
     font-weight: 700;
     p{min-width: 380px;}
@@ -1957,7 +1956,7 @@ h5,h4{font-size: 14px;}
   background: #e4e4e4;
   &:hover{color: #111; background: #c8c8c8;}
 }
-input{-webkit-appearance: none;}
+input[type="text"],input[type="password"]{-webkit-appearance: none;}
 select{
   appearance: none;
   position: relative;
@@ -2072,6 +2071,9 @@ button{
   .trend{
     .item{padding: 15px;}
   }
+  .product{
+    .price__old{margin-left: 15px;}
+  }
   .product_like{
     .product{
       padding: 10px;
@@ -2100,7 +2102,12 @@ button{
     .cl-1{width: 60%;}
     .cl-2{width: 15%;}
     .cl-3{width: 10%;}
-    .cl-4{width: 10%;}
+    .cl-4{width: 15%; text-align: right;}
+    &__bottom{
+      .voucher{padding: 17px 14px;}
+    }
+    .transport{padding: 15px 14px;}
+    .total_pay{padding: 14px 14px;}
   }
   .login,.register{
     .intro,form{max-width: 50%;}
@@ -2516,7 +2523,7 @@ button{
     .list_img{
       width: 100%; order: 2;
       .slick-slide{height: auto; padding: 0 2px;}
-      img{height: auto;}
+      img{height: auto; border-width: 1px;}
     }
     .imglarge-product{margin-left: 0; order: 1;}
     .active img{border-width: 1px;}
