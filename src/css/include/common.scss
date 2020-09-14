@@ -291,12 +291,15 @@ header{
   .slick-arrow{
     width: 35px;
     height: 80px;
-    background: #f2f2f4 url("#{$img-path}/icon-arr1.png") no-repeat center center;
+    background: #f2f2f4;
     box-shadow: none;
-    &::after{display: none;}
+    &::after{
+      width: 9px; height: 16px;
+      background: url("#{$img-path}/icon-arr1.png") no-repeat center center;
+    }
   }
   .slick-prev{left: -42px;}
-  .slick-next{right: -42px; transform: translateY(-50%) rotateY(180deg);}
+  .slick-next{right: -42px;}
 }
 .search_related{
   h2{margin-right: 114px;}
