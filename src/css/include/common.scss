@@ -1961,6 +1961,7 @@ select{
   padding-right: 30px;
   background: url("#{$img-path}/icon-arr3.png") no-repeat right center;
   &:focus{outline: none;}
+  option{padding: 2px 5px;}
 }
 .pr{position: relative;}
 .container{max-width: 1200px;}
@@ -2169,7 +2170,8 @@ button{
   .slider-sale{max-height: 250px;}
   .sort{
     h5{margin-right: 15px;}
-    .btn_sort,select{padding: 8px 10px; font-size: 13px;}
+    .btn_sort{padding: 8px 10px; font-size: 13px;}
+    select{padding: 8px 30px 8px 10px; font-size: 13px;}
   }
   .product-flashsale{
     .header{padding: 0;}
@@ -2343,7 +2345,8 @@ button{
   }
   .sort{
     h5{width: 100%; margin-bottom: 5px;}
-    .btn_sort,select{margin: 3px;  padding: 6px 7px;}
+    .btn_sort{margin: 3px;  padding: 6px 7px;}
+    select{padding: 6px 30px 5px 7px;}
   }
   .profile{
     &__banner{margin: 20px 0;}

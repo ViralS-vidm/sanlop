@@ -5605,6 +5605,10 @@ select:focus {
   outline: none;
 }
 
+select option {
+  padding: 2px 5px;
+}
+
 .pr {
   position: relative;
 }
@@ -5999,8 +6003,12 @@ button:focus {
   .sort h5 {
     margin-right: 15px;
   }
-  .sort .btn_sort, .sort select {
+  .sort .btn_sort {
     padding: 8px 10px;
+    font-size: 13px;
+  }
+  .sort select {
+    padding: 8px 30px 8px 10px;
     font-size: 13px;
   }
   .product-flashsale .header {
@@ -6381,9 +6389,12 @@ button:focus {
     width: 100%;
     margin-bottom: 5px;
   }
-  .sort .btn_sort, .sort select {
+  .sort .btn_sort {
     margin: 3px;
     padding: 6px 7px;
+  }
+  .sort select {
+    padding: 6px 30px 5px 7px;
   }
   .profile__banner {
     margin: 20px 0;
