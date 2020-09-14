@@ -42,7 +42,7 @@
                         <a href="https://thuclfc.gitlab.io/bonbon/build/notification.html" class="btn_view">Xem tất cả</a>
                     </div>
                 </div>
-                <a href="" title="">Trợ giúp</a>
+                <a href="https://thuclfc.gitlab.io/bonbon/build/gioi-thieu.html" title="">Trợ giúp</a>
                 <div class="user flex flex-center">
                     <a href="https://thuclfc.gitlab.io/bonbon/build/login.html" title="">Đăng ký</a> <span class="space">/</span> <a href="https://thuclfc.gitlab.io/bonbon/build/register.html" title="">Đăng nhập</a>
                 </div>
@@ -51,10 +51,13 @@
     </div>
     <div class="btHeader">
         <div class="container flex">
+            <button class="navbar-toggler" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <a href="https://thuclfc.gitlab.io/bonbon/build/home.html" class="logo"><img src="./assets/img/logo3.png" alt=""></a>
             <form action="" class="search pr">
                 <input type="text" placeholder="Tìm kiếm từ khóa" required>
-                <button type="button" class="btn_search"></button>
+                <button type="button" class="btn_search" onclick="location.href='https://thuclfc.gitlab.io/bonbon/build/tim-kiem.html'"></button>
                 <p>Gợi ý tìm kiếm: <a href="javascript:;">Lốp Genius</a>, <a href="javascript:;">GrightStone</a>. <a href="javascript:;">Turanza</a>..</p>
             </form>
             <div class="dropdown favourite">
@@ -64,23 +67,34 @@
                 </button>
                 <div class="dropdown-content">
                     <h5>Danh sách yêu thích  (2 Sản phẩm)</h5>
-                    <div class="product flex">
-                        <a href="" class="product__thumb"><img src="./assets/img/thumb1.jpg" alt=""></a>
-                        <div class="product__detail">
-                            <h3><a href="">Lốp xe Brightstoe Turanza Êm ái dành cho xe 14 chỗ</a></h3>
-                            <span>Phân loại: Một Lốp</span>
-                            <div class="price">10.800.000đ</div>
+                    <div class="product_list">
+                        <div class="product flex">
+                            <a href="" class="product__thumb"><img src="./assets/img/thumb1.jpg" alt=""></a>
+                            <div class="product__detail">
+                                <h3><a href="">Lốp xe Brightstoe Turanza Êm ái dành cho xe 14 chỗ</a></h3>
+                                <span>Phân loại: Một Lốp</span>
+                                <div class="price">10.800.000đ</div>
+                            </div>
+                            <a href="javascript:;" class="btn_remove" data-toggle="modal" data-target="#modal_notifi">Xóa</a>
                         </div>
-                        <a href="javascript:;" class="btn_remove" data-toggle="modal" data-target="#modal_notifi">Xóa</a>
-                    </div>
-                    <div class="product flex">
-                        <a href="" class="product__thumb"><img src="./assets/img/thumb1.jpg" alt=""></a>
-                        <div class="product__detail">
-                            <h3><a href="">Lốp xe Brightstoe Turanza Êm ái dành cho xe 14 chỗ</a></h3>
-                            <span>Phân loại: Một Lốp</span>
-                            <div class="price">10.800.000đ</div>
+                        <div class="product flex">
+                            <a href="" class="product__thumb"><img src="./assets/img/thumb1.jpg" alt=""></a>
+                            <div class="product__detail">
+                                <h3><a href="">Lốp xe Brightstoe Turanza Êm ái dành cho xe 14 chỗ</a></h3>
+                                <span>Phân loại: Một Lốp</span>
+                                <div class="price">10.800.000đ</div>
+                            </div>
+                            <a href="javascript:;" class="btn_remove" data-toggle="modal" data-target="#modal_notifi">Xóa</a>
                         </div>
-                        <a href="javascript:;" class="btn_remove" data-toggle="modal" data-target="#modal_notifi">Xóa</a>
+                        <div class="product flex">
+                            <a href="" class="product__thumb"><img src="./assets/img/thumb1.jpg" alt=""></a>
+                            <div class="product__detail">
+                                <h3><a href="">Lốp xe Brightstoe Turanza Êm ái dành cho xe 14 chỗ</a></h3>
+                                <span>Phân loại: Một Lốp</span>
+                                <div class="price">10.800.000đ</div>
+                            </div>
+                            <a href="javascript:;" class="btn_remove" data-toggle="modal" data-target="#modal_notifi">Xóa</a>
+                        </div>
                     </div>
                     <a href="https://thuclfc.gitlab.io/bonbon/build/cart.html" class="btn_addcar flex-center">Thêm vào giỏ hàng</a>
                 </div>
@@ -92,39 +106,56 @@
                 </button>
                 <div class="dropdown-content">
                     <h5>Giỏ hàng (2 Sản phẩm)</h5>
-                    <div class="product flex">
-                        <a href="" class="product__thumb"><img src="./assets/img/thumb1.jpg" alt=""></a>
-                        <div class="product__detail">
-                            <h3><a href="">Lốp xe Brightstoe Turanza Êm ái dành cho xe 14 chỗ</a></h3>
-                            <span>Phân loại: Một Lốp</span>
-                            <div class="price">10.800.000đ</div>
+                    <div class="product_list">
+                        <div class="product flex">
+                            <a href="" class="product__thumb"><img src="./assets/img/thumb1.jpg" alt=""></a>
+                            <div class="product__detail">
+                                <h3><a href="">Lốp xe Brightstoe Turanza Êm ái dành cho xe 14 chỗ</a></h3>
+                                <span>Phân loại: Một Lốp</span>
+                                <div class="price">10.800.000đ</div>
+                            </div>
+                            <div class="amount flex">
+                                <a href="javascript:void(0)" class="redu_amount">-</a>
+                                <input type="number" value="1">
+                                <a href="javascript:void(0)" class="add_amount">+</a>
+                            </div>
+                            <a href="" class="btn_remove">Xóa</a>
                         </div>
-                        <div class="amount flex">
-                            <a href="javascript:void(0)" class="redu_amount">-</a>
-                            <input type="number" value="1" readonly>
-                            <a href="javascript:void(0)" class="add_amount">+</a>
+                        <div class="product flex">
+                            <a href="" class="product__thumb"><img src="./assets/img/thumb1.jpg" alt=""></a>
+                            <div class="product__detail">
+                                <h3><a href="">Lốp xe Brightstoe Turanza Êm ái dành cho xe 14 chỗ</a></h3>
+                                <span>Phân loại: Một Lốp</span>
+                                <div class="price">10.800.000đ</div>
+                            </div>
+                            <div class="amount flex">
+                                <a href="javascript:void(0)" class="redu_amount">-</a>
+                                <input type="number" value="1">
+                                <a href="javascript:void(0)" class="add_amount">+</a>
+                            </div>
+                            <a href="" class="btn_remove">Xóa</a>
                         </div>
-                        <a href="" class="btn_remove">Xóa</a>
-                    </div>
-                    <div class="product flex">
-                        <a href="" class="product__thumb"><img src="./assets/img/thumb1.jpg" alt=""></a>
-                        <div class="product__detail">
-                            <h3><a href="">Lốp xe Brightstoe Turanza Êm ái dành cho xe 14 chỗ</a></h3>
-                            <span>Phân loại: Một Lốp</span>
-                            <div class="price">10.800.000đ</div>
+                        <div class="product flex">
+                            <a href="" class="product__thumb"><img src="./assets/img/thumb1.jpg" alt=""></a>
+                            <div class="product__detail">
+                                <h3><a href="">Lốp xe Brightstoe Turanza Êm ái dành cho xe 14 chỗ</a></h3>
+                                <span>Phân loại: Một Lốp</span>
+                                <div class="price">10.800.000đ</div>
+                            </div>
+                            <div class="amount flex">
+                                <a href="javascript:void(0)" class="redu_amount">-</a>
+                                <input type="number" value="1">
+                                <a href="javascript:void(0)" class="add_amount">+</a>
+                            </div>
+                            <a href="" class="btn_remove">Xóa</a>
                         </div>
-                        <div class="amount flex">
-                            <a href="javascript:void(0)" class="redu_amount">-</a>
-                            <input type="number" value="1" readonly>
-                            <a href="javascript:void(0)" class="add_amount">+</a>
-                        </div>
-                        <a href="" class="btn_remove">Xóa</a>
                     </div>
                     <a href="https://thuclfc.gitlab.io/bonbon/build/cart.html" class="btn_viewcar flex-center">Xem giỏ hàng</a>
                 </div>
             </div>
         </div>
     </div>
+    <div class="modal-popup"></div>
 </header>
 
 <main>
@@ -536,27 +567,27 @@
             <div class="col-lg-3 col-md-6">
                 <h4>Dành cho Người mua</h4>
                 <ul class="links">
-                    <li><a href="" title="">Hướng dẫn mua hàng</a></li>
-                    <li><a href="" title="">Hướng dẫn khiếu nại</a></li>
-                    <li><a href="" title="">Chăm sóc khách hàng</a></li>
+                    <li><a href="https://thuclfc.gitlab.io/bonbon/build/ho-tro.html" title="">Hướng dẫn mua hàng</a></li>
+                    <li><a href="https://thuclfc.gitlab.io/bonbon/build/ho-tro.html" title="">Hướng dẫn khiếu nại</a></li>
+                    <li><a href="https://thuclfc.gitlab.io/bonbon/build/ho-tro.html" title="">Chăm sóc khách hàng</a></li>
                 </ul>
             </div>
             <div class="col-lg-3 col-md-6">
                 <h4>Dành cho Người bán</h4>
                 <ul class="links">
-                    <li><a href="" title="">Mở shop trên SÀN LỐP</a></li>
-                    <li><a href="" title="">Hướng dẫn bán hàng</a></li>
-                    <li><a href="" title="">Chính sách bán hàng</a></li>
-                    <li><a href="" title="">Tiêu chí kiểm duyệt</a></li>
+                    <li><a href="https://thuclfc.gitlab.io/bonbon/build/ho-tro.html" title="">Mở shop trên SÀN LỐP</a></li>
+                    <li><a href="https://thuclfc.gitlab.io/bonbon/build/ho-tro.html" title="">Hướng dẫn bán hàng</a></li>
+                    <li><a href="https://thuclfc.gitlab.io/bonbon/build/ho-tro.html" title="">Chính sách bán hàng</a></li>
+                    <li><a href="https://thuclfc.gitlab.io/bonbon/build/ho-tro.html" title="">Tiêu chí kiểm duyệt</a></li>
                 </ul>
             </div>
             <div class="col-lg-3 col-md-6">
                 <h4>Phương thức Thanh toán</h4>
                 <div class="pay flex">
-                    <a href="" title="" class="visa">visa</a>
-                    <a href="" title="" class="mastercard">mastercard</a>
-                    <a href="" title="" class="discover">discover</a>
-                    <a href="" title="" class="paypal">paypal</a>
+                    <a href="https://thuclfc.gitlab.io/bonbon/build/ho-tro.html" title="" class="visa">visa</a>
+                    <a href="https://thuclfc.gitlab.io/bonbon/build/ho-tro.html" title="" class="mastercard">mastercard</a>
+                    <a href="https://thuclfc.gitlab.io/bonbon/build/ho-tro.html" title="" class="discover">discover</a>
+                    <a href="https://thuclfc.gitlab.io/bonbon/build/ho-tro.html" title="" class="paypal">paypal</a>
                 </div>
                 <h4 class="mb-0">TẢi ứng dụng miễn phí</h4>
                 <div id="download" class="download flex">

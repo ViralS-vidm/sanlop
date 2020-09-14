@@ -24,11 +24,11 @@
         sp_content.hide();
         sp_content_active.find('article').slideToggle();
 
-        $('.faq li').click(function () {
+        $('.faq li h5').click(function () {
             $('.faq li').removeClass('active');
-            $(this).addClass('active');
+            $(this).parent().addClass('active');
             $('.faq article').slideUp();
-            $(this).find('article').slideToggle();
+            $(this).parent().find('article').slideToggle();
             return false;
         });
     });
