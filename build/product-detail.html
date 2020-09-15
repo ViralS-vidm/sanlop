@@ -74,7 +74,7 @@
                                 <span>Phân loại: Một Lốp</span>
                                 <div class="price">10.800.000đ</div>
                             </div>
-                            <a href="javascript:;" class="btn_remove" data-toggle="modal" data-target="#modal_notifi">Xóa</a>
+                            <a href="javascript:;" class="btn_remove" data-toggle="modal" data-target="#modal_notifi_dl_like">Xóa</a>
                         </div>
                         <div class="product flex">
                             <a href="" class="product__thumb"><img src="./assets/img/thumb1.jpg" alt=""></a>
@@ -83,7 +83,7 @@
                                 <span>Phân loại: Một Lốp</span>
                                 <div class="price">10.800.000đ</div>
                             </div>
-                            <a href="javascript:;" class="btn_remove" data-toggle="modal" data-target="#modal_notifi">Xóa</a>
+                            <a href="javascript:;" class="btn_remove" data-toggle="modal" data-target="#modal_notifi_dl_like">Xóa</a>
                         </div>
                         <div class="product flex">
                             <a href="" class="product__thumb"><img src="./assets/img/thumb1.jpg" alt=""></a>
@@ -92,7 +92,7 @@
                                 <span>Phân loại: Một Lốp</span>
                                 <div class="price">10.800.000đ</div>
                             </div>
-                            <a href="javascript:;" class="btn_remove" data-toggle="modal" data-target="#modal_notifi">Xóa</a>
+                            <a href="javascript:;" class="btn_remove" data-toggle="modal" data-target="#modal_notifi_dl_like">Xóa</a>
                         </div>
                     </div>
                     <a href="" class="btn_addcar flex-center">Thêm vào giỏ hàng</a>
@@ -119,7 +119,7 @@
                                 <input type="number" value="1">
                                 <a href="javascript:void(0)" class="add_amount">+</a>
                             </div>
-                            <a href="" class="btn_remove">Xóa</a>
+                            <a href="javascript:;" class="btn_remove" data-toggle="modal" data-target="#modal_notifi_dl_cart">Xóa</a>
                         </div>
                         <div class="product flex">
                             <a href="" class="product__thumb"><img src="./assets/img/thumb1.jpg" alt=""></a>
@@ -133,7 +133,7 @@
                                 <input type="number" value="1">
                                 <a href="javascript:void(0)" class="add_amount">+</a>
                             </div>
-                            <a href="" class="btn_remove">Xóa</a>
+                            <a href="javascript:;" class="btn_remove" data-toggle="modal" data-target="#modal_notifi_dl_cart">Xóa</a>
                         </div>
                         <div class="product flex">
                             <a href="" class="product__thumb"><img src="./assets/img/thumb1.jpg" alt=""></a>
@@ -147,7 +147,7 @@
                                 <input type="number" value="1">
                                 <a href="javascript:void(0)" class="add_amount">+</a>
                             </div>
-                            <a href="" class="btn_remove">Xóa</a>
+                            <a href="javascript:;" class="btn_remove" data-toggle="modal" data-target="#modal_notifi_dl_cart">Xóa</a>
                         </div>
                     </div>
                     <a href="https://thuclfc.gitlab.io/bonbon/build/cart.html" class="btn_viewcar flex-center">Xem giỏ hàng</a>
@@ -157,6 +157,32 @@
     </div>
     <div class="modal-popup"></div>
 </header>
+<div class="modal fade modal_notifi" id="modal_notifi_dl_cart">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <a href="javascript:;" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></a>
+            <div class="notifi">
+                <img src="./assets/img/icon-removecart.png" alt="">
+                <p style="color:#f57c00;">Bạn có chắc muốn xóa sản phẩm này?</p>
+                <div class="box-btn flex-center">
+                    <a href="javascript:;" class="btn_ty4">Đồng ý</a>
+                    <a href="javascript:;" class="btn_ty3"  class="close" data-dismiss="modal">Không</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade modal_notifi" id="modal_notifi_dl_like">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <a href="javascript:;" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></a>
+            <div class="notifi">
+                <img src="./assets/img/icon-removecart.png" alt="">
+                <p>Xóa sản phẩm thành công</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 <main>
     <div class="product_related">

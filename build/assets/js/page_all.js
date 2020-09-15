@@ -60,7 +60,7 @@
     $(this).parent().addClass('show');
   });
   $(document).mouseup(function (e) {
-    var container = $(".dropdown-content,.notified");
+    var container = $(".dropdown-content,.notified,.modal");
 
     if (!container.is(e.target) && container.has(e.target).length === 0) {
       $('.dropdown,.notified').removeClass('show');
