@@ -223,6 +223,9 @@ header .notified {
   position: absolute;
   right: -40px;
   top: 45px;
+  -webkit-box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.2);
+     -moz-box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.2);
   z-index: 90;
 }
 
@@ -5187,6 +5190,15 @@ header .btn_remove:hover {
 
 .modal_notifi .modal-content .btn_submit {
   background: #f2f2f4;
+}
+
+.modal_notifi .box-btn {
+  margin-top: 20px;
+}
+
+.modal_notifi .box-btn a {
+  padding: 7px 20px;
+  margin: 0 5px;
 }
 
 .box-breadcrumb {

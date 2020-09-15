@@ -22,7 +22,7 @@ $(document).ready(function () {
     });
 
     //show notifi
-    $('.notifi').on('click',function () {
+    $('header .notifi').on('click',function () {
        $('.notified').addClass('show');
     });
     $('.notified .close').on('click',function () {
