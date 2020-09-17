@@ -2689,6 +2689,9 @@ header .btn_remove:hover {
   color: #f57d20;
 }
 
+.cart .type span:hover {
+  cursor: pointer;
+}
 .cart .item, .favourite .item, .paycart .item {
   padding: 20px 14px;
   background: #fff;
@@ -5026,6 +5029,51 @@ header .btn_remove:hover {
 
 .modal_voucher .voucher__list::-webkit-scrollbar-thumb {
   background: #666;
+}
+.modal_type label {
+  font-size: 14px;
+  color: #111;
+}
+.modal_type .modal-header {
+  background-color: #f7f8f9;
+  border-radius: 18px 18px 0 0;
+  padding: 32px 30px;
+}
+.modal_type .modal-body {
+  height: 420px;
+  max-height: 420px;
+  overflow-y: scroll;
+  padding-top: 30px;
+  box-shadow: -0.1px -2px 3px 0 rgba(0, 0, 0, 0.1);
+}
+.modal_type ul.list_size li,
+.modal_type ul.list_property_size li {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.modal_type .property_size {
+  margin-top: 30px;
+}
+.modal_type li button.btn-primary-type {
+  min-width: 90px;
+  min-height: 35px;
+  background-color: #f6f7f8;
+  border: solid 1px #cccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.modal_type  li button.btn-primary-type:hover,
+.modal_type  li.active button.btn-primary-type {
+  background-color: #feecde;
+  border: solid 1px #f57d20;
+  color: #f57d20;
+}
+
+.modal_type .modal-footer {
+  margin-top: 0;
+  background-color: #f7f8f9;
+  border-radius: 0 0 18px 18px;
 }
 
 .modal_change_address .address {
